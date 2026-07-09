@@ -1,0 +1,575 @@
+
+
+/* ================= About me - PROFILE CARD ================= */
+
+  /* About Section -  About me and Unerline Hilght Text */
+
+
+    
+    .info-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .info-list li {
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .info-list span {
+      font-weight: 300;
+      color: var(--gray);
+      margin-left: 10px;
+    }
+
+
+    .about-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      color: var(--primary-orange);
+      margin-bottom: 15px;
+    }
+
+
+ /* ================= About me - PROFILE CARD  ================= */
+ 
+
+.profile-section {
+    width: 100%;
+    background: white;
+    padding: 0px 0;
+    display: block;
+    min-height: auto;
+    height: auto;
+    background: transparent;
+}
+
+.profile-card {
+    display: flex;
+    max-width: 1300px;
+    /* yaha pura content width control hogi */
+    margin: auto;
+    gap: 40px;
+    /* photo aur text ke beech ka gap */
+    align-items: center;
+    /* photo aur text top se align honge */
+}
+
+/* LEFT IMAGE BOX (SMALL PHOTO BOX) */
+
+.image-box {
+    width: 420px;
+    height: 520px;
+    /* yaha height control hogi */
+    background: orange;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    /* center horizontally, 30% from top */
+    display: block;
+}
+
+
+.image-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 🔥 main fix */
+    position: absolute;
+    /* 🔥 IMPORTANT */
+    top: 0;
+    left: 0;
+}
+
+
+/* SOCIAL BAR */
+
+.social-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 147, 5, 0.35);
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+.social-bar a {
+    color: white;
+    border: 1px solid white;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social-bar a:hover {
+    background: orange;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* RIGHT SIDE */ 
+ /* Hello, I am Deepak Rajput
+Graphic Designer and Web Designer
+
+I am a passionate Graphic Designer with more than 15 years of experience in the design industry. I specialize in creating impactful visual designs including social media graphics, product packaging design, newspaper advertisements, branding materials and marketing creatives. ================= */
+
+
+.profile-info h2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.profile-info span {
+    color: orangered;
+}
+
+.profile-info h4 {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #ff5507;
+    margin-bottom: 0px;
+    /* 10px → 5px */
+}
+
+.profile-info p {
+    line-height: 1.6;
+    /* spacing */
+    margin-bottom: 25px;
+    /* niche space */
+    margin-top: 15px;
+    /* 👈 text upar se niche  */
+    text-align: justify;
+    /* fully justify text */
+    text-align-last: left;
+    max-width: 800px;
+
+}
+
+.profile-info {
+    flex: 1;
+    padding: 0 40px;
+    text-align: left;
+}
+
+.profile-info h2,
+.profile-info h4,
+.profile-info p {
+    text-align: left;
+    margin-left: 0;
+}
+
+/* Remove orange line between heading and designation */
+
+.profile-info h2::after,
+.profile-info h2::before {
+    display: none;
+    content: none;
+}
+
+.profile-info h4 {
+    border: none;
+    /* agar border se line aa rahi ho */
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* MY SKILLS HEADING */
+
+.skills-title {
+    color: #ff6a00;
+    /* orange color */
+    font-size: 22px;
+    /* text size */
+    margin-bottom: 10px;
+    /* niche space control */
+    margin-top: 10px;
+    /* upar thodi space */
+    font-weight: 600;
+}
+
+
+/* SKILLS */
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 08px;
+}
+
+.skill-label {
+    background: orange;
+    color: white;
+    padding: 6px 12px;
+    font-size: 13px;
+    margin-right: 10px;
+    font-weight: bold;
+    /* yaha font bold hoga */
+    width: 110px;
+    display: flex;
+    /* 🔥 add */
+    align-items: center;
+    /* 🔥 vertical center */
+    justify-content: center;
+    /* 🔥 horizontal center */
+}
+
+.skill-bar {
+    flex: 1;
+    height: 20px;
+    background: #ddd;
+    position: relative;
+    margin-right: 10px;
+}
+
+.skill-bar span {
+    position: absolute;
+    height: 100%;
+    background: #Ff6633;
+    width: 0;
+    transition: 1.5s;
+}
+
+.percent {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    /* yaha font bold hoga */
+}
+
+.skill-bar span {
+    transition: 1.5s ease;
+}
+
+
+.wa-widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+
+    transition: opacity 0.3s ease;
+}
+
+/* hide class */
+.wa-hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+/* Container for the text and timeline below the profile card */
+/* 15+ Years of Visual Excellence - Self-Employed Freelancer  */
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 50px;
+    /* Balanced space between columns */
+    max-width: 1100px;
+    /* Matches your profile card width */
+    margin: 80px auto;
+    /* Perfectly centered on screen */
+    padding: 20px;
+    /* Consistent padding */
+    align-items: center;
+    /* Keeps both columns aligned at the top */
+}
+
+
+/* About text alignment */
+
+.about-white {
+    width: 100%;
+    background: #f2f2f2;
+    padding: 120px 10%;
+    min-height: 300px;
+    /* minimum height */
+    max-height: 400px;
+    /* maximum height */
+    overflow: hidden;
+    /* agar content zyada hua toh scroll ya cut */
+}
+
+
+.about-text h3 {
+    color: #FF6633;
+    /* Your theme primary orange */
+    font-size: 1.8rem;
+    margin-top: 0;
+    /* Removed top margin for alignment */
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    max-width: 100%;
+    /* Allow it to fill the grid column */
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    /* Professional editorial look */
+}
+
+/* Info list styling */
+.info-list {
+    list-style: none;
+    /* Clean look */
+    padding-left: 0;
+    /* Reset padding */
+    margin-top: 20px;
+}
+
+.info-list li {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.info-list span {
+    font-weight: 400;
+    color: #666666;
+    /* Subtle contrast for details */
+    margin-left: 10px;
+}
+
+/* Timeline alignment */
+.experience-timeline {
+    margin-top: 0;
+}
+
+.experience-timeline div {
+    margin-bottom: 25px;
+    padding-left: 20px;
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        /* Stack vertically on small screens */
+        padding: 20px;
+        gap: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------ABout me Mobile View---- */
+
+@media (max-width: 768px) {
+
+    /* --- NAVIGATION & ANCHOR FIX --- */
+    /* This is the key fix for your hidden text issue */
+    #about-section {
+        scroll-margin-top: 100px;
+        /* Adjust this number based on your navbar height */
+        padding-top: 20px;
+        display: block;
+    }
+
+    .about-title {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 5px;
+        display: block;
+        /* Ensures it is not hidden */
+    }
+
+    .orange-line {
+        margin: 0 auto 30px auto;
+        /* Centers the line below the text */
+    }
+
+    /* Ensure the profile card doesn't push the title out of view */
+    .profile-card {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+
+    .image-box {
+        width: 100%;
+        /* Full width on mobile */
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .image-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        /* Optional: adds a nice touch */
+    }
+
+    .profile-info {
+        padding: 0 10px;
+    }
+
+    .profile-info h2 {
+        font-size: 24px;
+        /* Slightly larger for impact */
+        margin-top: 15px;
+    }
+
+    /* --- SKILLS SECTION FIX (Compact & Clean) --- */
+    .skill {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: center;
+        /* Centers the whole skill row */
+    }
+
+    .skill-label {
+        width: 90px;
+        /* Fixed width so bars align perfectly */
+        font-size: 11px;
+        padding: 5px;
+        margin-right: 8px;
+        /* Small gap between label and bar */
+        flex-shrink: 0;
+        border-radius: 3px;
+    }
+
+    .skill-bar {
+        flex: 1;
+        /* Fills the middle space */
+        max-width: 180px;
+        /* Prevents the bar from getting too long */
+        height: 16px;
+        background: #ebebeb;
+        border-radius: 10px;
+        /* Rounded bars look modern */
+        overflow: hidden;
+        /* Keeps the orange inside the rounded corners */
+    }
+
+    .skill-bar span {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .percent {
+        font-size: 12px;
+        width: 35px;
+        /* Fixed width so numbers don't jump */
+        text-align: left;
+        margin-left: 8px;
+    }
+
+    /* --- ABOUT CONTENT --- */
+    .about-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .about-white {
+        height: auto;
+        max-height: none;
+        overflow: visible;
+        padding: 20px 10px;
+    }
+
+    /* Extra touch for the Experience/Freelance text */
+    .profile-info p {
+        line-height: 1.6;
+        font-size: 14px;
+        color: #333;
+    }
+}
+
+.about-white {
+    max-height: none;
+    height: auto;
+    overflow: visible;
+}
+
+
+
+.contact-wrapper {
+    margin-top: 60px !important;
+}
+
+@media (max-width: 480px) {
+
+    /* 1. Reduce the container's side padding if you have any */
+    .skill {
+        margin-bottom: 6px;
+        gap: 5px;
+        /* Creates a small, consistent gap between items */
+    }
+
+    /* 2. Shrink the orange label box */
+    .skill-label {
+        width: 80px;
+        /* Much smaller width for mobile */
+        font-size: 10px;
+        /* Smaller text to prevent overflow */
+        padding: 4px 5px;
+        /* Tighter padding */
+        margin-right: 0px;
+        /* Remove margin; we'll use gap instead */
+        flex-shrink: 0;
+        /* Keeps the box from squishing */
+    }
+
+    /* 3. Fix the Bar Gap */
+    .skill-bar {
+        flex: 1;
+        /* This makes the bar take up all available middle space */
+        height: 15px;
+        /* Thinner bar looks cleaner on mobile */
+        margin-right: 5px;
+        /* Small space before the % text */
+    }
+
+    /* 4. Ensure the % text stays on one line */
+    .percent {
+        font-size: 11px;
+        min-width: 30px;
+        /* Keeps the % text from jumping around */
+        text-align: right;
+    }
+}
+
+/* --------------------- /* ================= About me - PROFILE CARD Mobile View End ---------------------------------------- */

@@ -1,0 +1,166 @@
+
+/*::::::::::::::::::::::::::::::::::::
+    My Process Section
+::::::::::::::::::::::::::::::::::::*/
+
+/* =========================
+   MY WORKING PROCESS
+========================= */
+
+
+.process-area .section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.process-area .section-title h2{
+    font-size:40px;
+    font-weight:700;
+    color:#111;
+    margin-bottom:15px;
+    text-transform:uppercase;
+}
+
+.process-area .section-title h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#ff6600;
+    margin:15px auto 0;
+}
+
+.process-area .section-title p{
+    max-width:500px;
+    margin:20px auto 0;
+    font-size:14px;
+    line-height:1.8;
+    color:#555;
+}
+
+
+
+.process-area{
+    padding:20px 0;
+    background:#f8f8f8;
+}
+
+/* Desktop 5 Equal Columns */
+@media (min-width:992px){
+    .col-lg-2-4{
+        flex:0 0 20%;
+        max-width:20%;
+    }
+}
+
+.single-process-box{
+    background:#fff;
+    padding:35px 20px 25px;
+    border-radius:8px;
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+    transition:.3s;
+    height:100%;
+    text-align:center;
+}
+
+.single-process-box:hover{
+    transform:translateY(-8px);
+}
+
+.process-icon-wrap{
+    position:relative;
+    display:inline-block;
+    margin-bottom:20px;
+}
+
+.process-icon i{
+    font-size:42px;
+    color:#ff6600;
+}
+
+.process-number{
+    position:absolute;
+    top:-8px;
+    right:-18px;
+    background:#ff6600;
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    min-width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius:50px;
+}
+
+.single-process-box h3{
+    font-size:18px;
+    font-weight:700;
+    line-height:1.5;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.single-process-box p{
+    font-size:15px;
+    line-height:1.9;
+    color:#666;
+    margin:0;
+}
+
+.sequential-process{
+    display:flex;
+    flex-wrap:nowrap;
+    gap:20px;
+    padding:0 100px;
+}
+
+.sequential-process > div{
+    min-width:220px;
+}
+
+.sequential-process > div{
+    flex:1;
+}
+
+
+.process-area .section-title h2::after{
+    content:"";
+    display:block;
+    width:100px;
+    height:4px;
+    background:#ff6600;
+    margin:15px auto 0;
+}
+
+
+.process-area{
+    padding-bottom:120px;
+     padding-top:100px;
+}
+
+.process-area .section-title::before,
+.process-area .section-title::after,
+.process-area .section-title p::before,
+.process-area .section-title p::after{
+    display:none !important;
+}
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media(max-width:991px){
+    .single-process-box{
+        margin-bottom:25px;
+    }
+}
+
+
+/*::::::::::::::::::::::::::::::::::::
+    My Process Section END
+::::::::::::::::::::::::::::::::::::*/

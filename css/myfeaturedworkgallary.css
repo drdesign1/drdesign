@@ -1,0 +1,297 @@
+/* ==========================================
+   PORTFOLIO GALLERY START
+========================================== */
+
+/* GRID */
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.portfolio-item{
+    position:relative;
+    border-radius:15px;
+    overflow:hidden;
+    height:250px;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.portfolio-item img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.5s ease;
+}
+
+.portfolio-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(255,102,0,0.92);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:#fff;
+
+    opacity:0;
+    transition:0.4s ease;
+
+    padding:20px;
+}
+
+.portfolio-item:hover .portfolio-overlay{
+    opacity:1;
+}
+
+.portfolio-item:hover img{
+    transform:scale(1.08);
+}
+
+
+/* ==========================================
+   MODAL START
+========================================== */
+
+.slider-modal{
+    display:none;
+
+    position:fixed;
+    inset:0;
+
+    width:100%;
+    height:100vh;
+
+    background:rgba(0,0,0,0.95);
+
+    z-index:999999;
+
+    overflow:hidden;
+}
+
+
+/* CENTER CONTENT */
+
+.slider-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%, -50%);
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* IMAGE */
+
+.slider-content img{
+    max-width:85%;
+    max-height:88vh;
+
+    object-fit:contain;
+
+    border-radius:12px;
+
+    animation:galleryFade 0.35s ease;
+}
+
+
+/* SMOOTH IMAGE ANIMATION */
+
+@keyframes galleryFade{
+    from{
+        opacity:0;
+        transform:scale(0.96);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+
+/* ==========================================
+   NAVIGATION BUTTONS
+========================================== */
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:65px;
+    height:65px;
+
+    border:none;
+    border-radius:50%;
+
+    background:rgba(255,255,255,0.12);
+
+    color:#fff;
+    font-size:42px;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+
+    backdrop-filter:blur(6px);
+
+    z-index:9999;
+}
+
+.prev:hover,
+.next:hover{
+    background:rgba(255,102,0,0.9);
+}
+
+.prev{
+    left:40px;
+}
+
+.next{
+    right:40px;
+}
+
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+.close{
+    position:fixed;
+
+    top:20px;
+    right:20px;
+
+    width:55px;
+    height:55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,255,255,0.15);
+
+    backdrop-filter:blur(5px);
+
+    border-radius:50%;
+
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    z-index:99999999;
+
+    transition:0.3s ease;
+}
+
+.close:hover{
+    background:#ff6600;
+    transform:rotate(90deg);
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .portfolio-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .portfolio-item{
+        height:180px;
+    }
+
+    .slider-content img{
+        max-width:92%;
+        max-height:78vh;
+    }
+
+    .prev,
+    .next{
+        width:50px;
+        height:50px;
+
+        font-size:30px;
+    }
+
+    .prev{
+        left:10px;
+    }
+
+    .next{
+        right:10px;
+    }
+
+    .close{
+        top:15px;
+        right:15px;
+
+        width:45px;
+        height:45px;
+
+        font-size:24px;
+    }
+}
+
+
+
+/* IMAGE COUNT */
+
+.slide-count{
+    position:absolute;
+    bottom:25px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:rgba(0,0,0,0.6);
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:15px;
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    backdrop-filter:blur(4px);
+
+    z-index:9999;
+}
+
+@media(max-width:768px){
+
+    .slide-count{
+        bottom:18px;
+        font-size:13px;
+        padding:6px 14px;
+    }
+
+}
+
+
+/* ==========================================
+   PORTFOLIO GALLERY END
+========================================== */

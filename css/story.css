@@ -1,0 +1,180 @@
+/* ==========================================
+   STORY PAGE START
+========================================== */
+
+.story-section{
+    width:100%;
+    padding:140px 8% 80px;
+    background:#f5f5f5;
+}
+
+.story-heading{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.story-heading h2{
+    font-size:55px;
+    margin-bottom:15px;
+    color:#111;
+}
+
+.story-heading p{
+    font-size:18px;
+    color:#555;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+
+/* STORY CARD */
+
+.story-card{
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    margin-bottom:80px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:0.4s ease;
+}
+
+.story-card:hover{
+    transform:translateY(-8px);
+}
+
+.story-card.reverse{
+    flex-direction:row-reverse;
+}
+
+
+/* MEDIA */
+
+.story-media{
+    flex:1;
+
+    min-height:400px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#111;
+
+    overflow:hidden;
+}
+
+.story-media img,
+.story-media video{
+
+    max-width:100%;
+    max-height:500px;
+
+    width:auto;
+    height:auto;
+
+    object-fit:contain;
+
+    display:block;
+
+    margin:auto;
+}
+
+
+/* CONTENT */
+
+.story-content{
+    flex:1;
+    padding:50px;
+}
+
+.story-date{
+    display:inline-block;
+
+    background:#ff6600;
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+    font-weight:600;
+
+    margin-bottom:20px;
+}
+
+.story-content h2{
+    font-size:38px;
+    margin-bottom:20px;
+    color:#111;
+}
+
+.story-content p{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+}
+
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+    .story-card,
+    .story-card.reverse{
+        flex-direction:column;
+    }
+
+    .story-media{
+        width:100%;
+        min-height:280px;
+    }
+
+    .story-content{
+        padding:30px;
+    }
+
+    .story-heading h2{
+        font-size:40px;
+    }
+
+    .story-content h2{
+        font-size:28px;
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .story-section{
+        padding:120px 20px 60px;
+    }
+
+    .story-heading h1{
+        font-size:34px;
+    }
+
+    .story-heading p{
+        font-size:16px;
+    }
+
+    .story-content p{
+        font-size:16px;
+    }
+
+}
+
+/* ==========================================
+   STORY PAGE END
+========================================== */

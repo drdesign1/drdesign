@@ -1,0 +1,324 @@
+
+/* navbaar + logo + manu navigation  */
+
+/* navbaar  */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: var(--light);
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+
+
+/* logo  */
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-decoration: none;
+    color: inherit;
+    /* text ka color same rahe */
+}
+
+.logo-img {
+    height: 50px;
+    width: auto;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary);
+}
+
+
+nav.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+
+/* NAVBAR BASE */
+/* Update Date 21-03-2026 */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #ff6600;
+    /* 🔥 orange navbar */
+}
+
+/* LOGO */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    /* 🔥 important */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    margin-left: auto;
+    /* 🔥 push to right */
+}
+
+
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    nav ul {
+        position: absolute;
+        top: 100%;
+        /* 🔥 nav ke neeche */
+        left: 0;
+        width: 100%;
+        background: #ff6600;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        max-height: 0;
+        /* 🔥 hidden */
+        overflow: hidden;
+        transition: 0.3s ease;
+
+        padding: 0 20px;
+        /* 🔥 top padding hata diya */
+    }
+
+    nav ul.active {
+        max-height: none;
+        /* 🔥 open height */
+        overflow: visible !important;
+        max-width: 400px;
+        padding: 20px 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        /* ya 300px bhi kar sakta hai */
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 4px 0;
+        /* 🔥 yaha se spacing control hota hai */
+        margin: 0;
+        padding: 0 !important;
+        /* 🔥 main gap control */
+        line-height: 1 !important;
+        /* 🔥 extra height hatao */
+
+    }
+
+    nav ul li a {
+        color: white !important;
+        /* 🔥 ye add karo */
+        font-size: 16px;
+        display: block;
+        padding: 0 !important;
+        /* 🔥 main fix */
+    }
+
+    nav ul li a:hover {
+        color: white;
+    }
+
+    .menu-toggle {
+        display: flex;
+        /* 🔥 block → flex */
+        align-items: center;
+        /* 🔥 vertical center */
+        justify-content: center;
+        color: #ff6600;
+        line-height: 1;
+        height: auto;
+    }
+}
+
+/* navbaar + logo + manu navigation End  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   📱 ONLY MOBILE VIEW FIXED NAVIGATION & RIGHT-SIDE DROPDOWN
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    /* 1. Mobile menu drawer panel container background */
+    nav ul.active {
+        background: #ffffff !important; 
+        max-height: none !important; 
+        overflow: visible !important; /* Submenu elements popout visibility layout */
+        padding: 20px 20px !important;
+        border-radius: 8px !important;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+        display: block !important;    
+        text-align: left !important;  
+    }
+
+    /* 2. Menu elements horizontal stack lines alignment */
+    nav ul li {
+        width: 100% !important;
+        padding: 10px 0 !important;
+        display: block !important;    
+        text-align: left !important;
+    }
+
+    nav ul li a {
+        color: #000000 !important;   /* Shuruat me saare links normal pure black */
+        font-size: 16px !important;
+        display: inline-block !important;
+        font-weight: 600 !important;
+        transition: all 0.3s ease;
+        text-align: left !important;
+    }
+
+    /* Hover or active click finger touches text change state */
+    nav ul li a:hover {
+        color: #FF6600 !important; /* Cursor ya touch par orange */
+    }
+
+    /* POLICIES link custom styling alignment wrapper */
+    nav ul li a[style*="color"] {
+        color: #FF6600 !important;
+    }
+
+    /* 3. SERVICES DROPDOWN WRAPPER DEFINITIONS */
+    nav ul li.dropdown {
+        position: relative !important;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: none !important; /* Desktop hover panel layout completely clear in mobile */
+    }
+
+   /* 🔥 4. DROPDOWN SUBMENU RIGHT SIDE OPEN LOGIC */
+   nav ul li .dropdown-menu{
+    position:absolute !important;
+    right:0 !important;
+    left:auto !important;
+    top:0 !important;
+    width:180px !important;
+    z-index:9999 !important;
+    }
+    
+    /* 🔥 Jab class .open trigger hogi JavaScript se tab hi right side panel dikhega */
+    nav ul li.dropdown.open .dropdown-menu {
+        display: block !important;       
+    }
+
+    nav ul li .dropdown-menu li {
+        width: 100% !important;
+        padding: 5px 0 !important;
+        text-align: left !important;
+    }
+
+    nav ul li .dropdown-menu li a {
+        font-size: 15px !important;
+        color: #000000 !important; 
+        font-weight: 500 !important;
+        display: block !important;
+    }
+    
+    nav ul li .dropdown-menu li a:hover {
+        color: #FF6600 !important; 
+    }
+
+    /* FontAwesome Dynamic Indicators Arrow configurations */
+    nav ul li.dropdown.open > a i {
+        transform: rotate(-90deg) !important; /* Open hone par arrow right side swing point karega */
+    }
+
+    nav ul li.dropdown > a i {
+        display: inline-block;
+        transition: transform 0.3s ease;
+        margin-left: 8px;
+        color: #000000 !important; 
+    }
+
+
+
+    /* 🔥 5. HIRE ME BUTTON - CONTACT KE NICHE, ONLY GREEN FONT TEXT LINK (NO BOX/CAPSULE) */
+    nav ul li a.hire-btn {
+        color: #25D366 !important;       /* WhatsApp original theme clean green font */
+        background: transparent !important; /* No background borders or strips */
+        font-weight: 700 !important;     
+        font-size: 16px !important;
+        display: inline-block !important;
+        padding: 0 !important;           
+        margin-top: 5px !important;
+        text-align: left !important;
+        box-shadow: none !important;     
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a.hire-btn:hover {
+        color: #075E54 !important;       /* Hover layout deep emerald WhatsApp tone transition */
+    }
+}
+
+/* Base structural desktop synchronization validation rules */
+nav ul li .dropdown-menu li {
+    width: 100% !important;
+}
+

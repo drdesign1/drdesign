@@ -1,0 +1,137 @@
+
+/* ===== POLICIES SECTION MAIN ===== */
+
+/* ===== SECTION HEADING ===== */
+.section-title {
+  text-align: center;        /* Center text */
+  font-size: 42px;           /* Big heading */
+  font-weight: 700;          /* Bold */
+  color: #222;               /* Dark color */
+  margin-bottom: 40px;       /* Space below */
+  position: relative;        /* Needed for line */
+letter-spacing: 1px;       /* 👉 YAHAN add karo */
+  text-transform: capitalize;/* 👉 YAHAN add karo */
+}
+
+/* ===== ORANGE LINE BELOW ===== */
+.section-title::after {
+  content: "";
+  width: 70px;               /* Line width */
+  height: 4px;               /* Line thickness */
+  background: #ff6600;       /* Orange color */
+  display: block;
+  margin: 12px auto 0;       /* Center line */
+  border-radius: 2px;        /* Smooth edges */
+}
+
+
+/* ===== POLICY INTRO TEXT ===== */
+.policy-intro {
+  text-align: center;   /* center me aayega */
+  max-width: 700px;     /* line zyada wide na ho */
+  margin: -10px auto 25px; /* upar thoda gap, niche zyada gap */
+  font-size: 15px;
+  color: #555;          /* light grey professional look */
+  line-height: 1.6;
+  font-weight: 600; /* text bold */
+}
+
+
+/* ===== PROJECT WORK TERMS HEADING ===== */
+h3 {
+  color: #000000; /* Orange color (same theme as your site) */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#policies {
+  background: #ffffff;        /* Section background white */
+  padding: 60px 20px;        /* Top-bottom space + side padding */
+}
+
+
+/* ===== GRID CONTAINER ===== */
+.policies-container {
+  display: grid;
+  grid-template-columns: 1fr;   /* 🔥 sab ek ke niche */
+  gap: 20px;
+  max-width: 900px;             /* center width */
+  margin: auto;                 /* center align */
+}
+
+
+/* ===== SINGLE POLICY CARD ===== */
+.single-policy {
+  background: #f9f9f9;        /* Light grey background */
+  padding: 20px;              /* Inner spacing */
+  border-left: 4px solid #ff6600; /* Orange left border */
+  border-radius: 8px;         /* Rounded corners */
+  transition: 0.3s;           /* Smooth hover animation */
+}
+
+
+/* ===== HOVER EFFECT ===== */
+.single-policy:hover {
+  transform: translateY(-5px);  /* Card upar uthta hai */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+
+/* ===== POLICY TITLE ===== */
+.single-policy h4 {
+  margin-bottom: 10px;        /* Heading ke niche gap */
+  color: #FF6633;                /* Dark text */
+}
+
+
+/* ===== LIST STYLE ===== */
+.single-policy ol {
+  padding-left: 18px;         /* Left spacing for numbers */
+  color: #000000;                /* Slight grey text */
+  font-size: 14px;            /* Text size */
+  line-height: 1.6;           /* Line spacing */
+}
+
+/* ===== MAKE ORDERED LIST NUMBERS BOLD ===== */
+ol li::marker {
+  font-weight: bold; /* This makes only the list numbers (1,2,3...) bold */
+  color: #000000;
+}
+
+
+.policy-end {
+  text-align: left;
+  margin-top: 20px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.single-policy ol li {
+  padding-left: 5px;
+}
+
+
+
+/* ===== SIGNATURE STYLE DR ===== */
+.signature {
+  color: #FF6633;  /* Orange color */
+  font-weight: 700;
+}
+
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 28px;   /* heading chhota */
+  }
+
+  .single-policy {
+    padding: 15px;
+  }
+
+  .single-policy ol {
+    font-size: 13px;
+  }
+}
+
+
+/* ===== POLICIES SECTION MAIN End ===== */

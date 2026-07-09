@@ -1,0 +1,144 @@
+
+
+
+/* --- Why Choose Me Section --- */
+#why-choose {
+    font-family: Arial, sans-serif; /* Exact same font as What I Do */
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+/* --- Section Title Match Fix --- */
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: none; /* Agar uppercase hatana ho toh */
+    margin-bottom: 15px;
+    color: #000000;
+    text-align: center;
+}
+
+/* Orange Line */
+#why-choose .section-title h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#ff6600;
+    margin:20px auto;
+}
+
+.section-title p {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600; /* Creative solutions... wale text jaisa semi-bold */
+    line-height: 1.6;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* --- Flexible Feature Card Layout --- */
+.single-why-me {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+    background: #ffffff;
+    padding: 10px;
+}
+
+/* --- Orange Icon Box --- */
+.why-me-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #ff6a28; /* Perfect Orange */
+    min-width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(255, 106, 40, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    cursor: pointer;
+}
+
+/* Hover effect on orange box */
+.why-me-icon:hover {
+    background-color: #e55616;
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(229, 86, 22, 0.5);
+}
+
+.why-me-icon i {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+/* --- Content Text Style --- */
+.why-me-text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.why-me-text p {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+/* --- Responsive Layout (Mobile View) --- */
+@media (max-width: 767px) {
+    .single-why-me {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 15px;
+    }
+}
+
+/* Heading Area */
+#why-choose .section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+#why-choose .section-title h2{
+    font-family: Arial, sans-serif;
+    font-size:48px;
+    font-weight:700;
+    color:#111;
+    margin-bottom:15px;
+}
+
+/* Orange Line */
+#why-choose .section-title h2::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#ff6600;
+    margin:20px auto;
+}
+
+/* Text */
+#why-choose .section-title p{
+    font-size:18px;
+    font-weight:400;
+    color:#555;
+    line-height:1.8;
+    max-width:700px;
+    margin:0 auto;
+}
+
+
+
+
+
+#why-choose .section-title::before,
+#why-choose .section-title::after,
+#why-choose .section-title p::before,
+#why-choose .section-title p::after{
+    display:none !important;
+}

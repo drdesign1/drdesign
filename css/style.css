@@ -1,0 +1,285 @@
+:root {
+    --primary: #ff6a00;
+    --dark: #222;
+    --light: #ffffff;
+    --bg: #f4f6f9;
+
+
+    --primary-orange: #FF6600;
+    --dark-charcoal: #222222;
+    --light-bg: #f9f9f9;
+    --white: #ffffff;
+    --gray: #666666;
+
+}
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: var(--dark-charcoal);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+
+
+
+/* Navigation */
+    nav {
+      background: #ffffff;
+      padding: 0.5rem 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Updated Logo Styles */
+    .logo-container {
+      display: flex;
+      gap: 25px; /* 👈 Pehle 20px tha, ise 0px kar diya taaki extra space na rahe */
+      align-items: center;
+      text-decoration: none;
+      color: inherit; /* text ka color same rahe */  
+    }
+
+    .logo-img {
+      height: 50px;
+      width: auto;
+      margin-right: -5px; /* 👈 Yeh logo image ko right side (text ki taraf) khiskayega */
+    }
+
+    .logo-text {
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: var(--primary-orange);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+      position: relative; /* Desktop Dropdown Parent Setup */
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--dark-charcoal);
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: 0.3s;
+      text-transform: uppercase;
+    }
+
+    nav, .navbar {
+        background-color: #ffffff !important; /* Navbar Top White Box  */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Navbar Top White Box  */
+    }
+
+    nav ul li a:hover {
+      color: var(--primary-orange);
+    }
+
+    /* Desktop Dropdown Hover Display */
+    nav ul li.dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    nav ul li .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: var(--white);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 10px 0;
+      list-style: none;
+      min-width: 150px;
+      z-index: 1001;
+    }
+
+    nav ul li .dropdown-menu li {
+      margin: 0;
+    }
+
+    nav ul li .dropdown-menu li a {
+      padding: 8px 20px;
+      display: block;
+      font-size: 0.85rem;
+    }
+
+    nav ul li .dropdown-menu li a:hover {
+      background: #f5f5f5;
+    }
+
+/* Secton Heading and Orang Underline of About Me, My Featured Work, What I Do, Technical Expertise, Get In Touch  */
+
+   section {
+      padding: 100px 10%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 60px;
+      font-size: 2.8rem;
+      position: relative;
+      width: 100%;
+    }
+
+    h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 5px;
+      background: var(--primary-orange);
+      margin: 10px auto;
+    }
+
+
+    /* ==========================================
+   Clickable Service Cards
+   ========================================== */
+
+    .service-card-link{
+        display:block;
+        text-decoration:none;
+        color:inherit;
+    }
+
+    .service-card-link:hover{
+        text-decoration:none;
+        color:inherit;
+    }
+
+    .service-card-link .service-card{
+        height:100%;
+    }
+
+
+
+/* Secton Heading and Orang Underline of About Me, My Featured Work, What I Do, Technical Expertise, Get In Touch END */
+
+
+
+    /* Mobile Styles Fix for Hamburger Menu & Dropdown */
+    .menu-toggle {
+      display: none;
+      font-size: 1.8rem;
+      color: #FF6633;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        grid-template-columns: 1fr;
+      }
+
+      #home h1 {
+        font-size: 2.5rem;
+      }
+
+      nav {
+        padding: 1rem 5%;
+        position: sticky;
+      }
+
+      .menu-toggle {
+        display: block; /* Hamburger visible on mobile */
+      }
+
+      nav ul {
+        display: none; /* Hide Menu by default on Mobile */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--white);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        z-index: 999;
+      }
+
+      /* Active class to toggle full mobile menu */
+      nav ul.active {
+        display: flex;
+      }
+
+      nav ul li {
+        margin: 10px 25px;
+        width: calc(100% - 50px);
+      }
+
+      nav ul li a {
+        display: block;
+        width: 100%;
+      }
+
+      /* Mobile view explicit dropdown styling */
+      nav ul li.dropdown:hover .dropdown-menu {
+        display: none; /* Turn off hover on mobile */
+      }
+
+      /* When JS adds .open class to dropdown item */
+      nav ul li.dropdown.open .dropdown-menu {
+        display: block;
+      }
+      
+          /* FontAwesome Dynamic Indicators Arrow configurations */
+    nav ul li.dropdown.open > a i {
+        transform: rotate(-90deg) !important; /* Open hone par arrow right side swing point karega */
+    }
+
+
+      nav ul li .dropdown-menu {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        box-shadow: none;
+        background: #fdfdfd;
+        border-left: 3px solid var(--primary-orange);
+        margin-top: 5px;
+        padding-left: 5px;
+        width: 100%;
+      }
+
+      section {
+        padding: 60px 5%;
+      }
+    }
+
+
+
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+

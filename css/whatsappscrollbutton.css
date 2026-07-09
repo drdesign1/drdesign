@@ -1,0 +1,124 @@
+/* Scroll Button up and Dwon + Whatsapp Button  */
+
+
+:root {
+    --orange-theme: #FF6600;
+    --wa-green: #25D366;
+    --white: #ffffff;
+    --shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Desktop/General Layout */
+.btn-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 99999;
+    font-family: sans-serif;
+}
+
+.side-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+.scroll-btn {
+    background-color: var(--orange-theme);
+    color: var(--white);
+    font-size: 20px;
+}
+
+.wa-btn {
+    background-color: var(--wa-green);
+    color: var(--white);
+    font-size: 28px;
+    animation: pulse-green 2s infinite;
+}
+
+/* Animations & Tooltips */
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.side-btn::after {
+    content: attr(data-label);
+    position: absolute;
+    right: 70px;
+    background: #333;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.side-btn:hover::after {
+    opacity: 1;
+    right: 80px;
+}
+
+#upBtn {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+}
+
+#upBtn.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* =========================================
+   MOBILE COMPATIBILITY (Screens < 768px)
+   ========================================= */
+@media screen and (max-width: 768px) {
+    .btn-container {
+        bottom: 20px; /* Closer to edge */
+        right: 20px;
+        gap: 10px;    /* Tighter spacing */
+    }
+
+    .side-btn {
+        width: 48px;  /* Smaller buttons for mobile */
+        height: 48px;
+    }
+
+    .scroll-btn {
+        font-size: 18px; /* Slightly smaller icons */
+    }
+
+    .wa-btn {
+        font-size: 24px;
+    }
+
+    /* Disable tooltips on mobile as there is no "hover" state */
+    .side-btn::after {
+        display: none !important;
+    }
+
+    /* Slightly reduce pulse size to prevent screen overflow */
+    @keyframes pulse-green {
+        0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+        70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+}
