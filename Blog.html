@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"content="DR Design is a Vadodara-based Graphic Design and Packaging Design Agency offering Branding, Logo Design, Brochure Design, Social Media Design and Digital Marketing Services with 15+ years of experience.">
+ <meta name="author" content="Deepak Rajput Graphic Designer DR Design">
+ <meta name="robots" content="index, follow">  
+ <meta name="keywords" content="Graphic Designer Vadodara, Packaging Designer Vadodara, Web Designer Vadodara, Logo Design, Brochure Design, Product Catalogue Design, Social Media Design">
+ <link rel="icon" type="image/png" href="images/dr-design-graphic-design.png">
+
+  <title>Deepak Rajput | Blog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/myfeaturedworkgallary.css">
+  <link rel="stylesheet" href="css/whatsappscrollbutton.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<style>
+  /* Hire Me link color */
+  .hire-btn {
+    color: #04c71e;
+    /* Green - WhatsApp style */
+    /* Agar orange chahiye, use #Ff6633  */
+    font-weight: bold;
+    /* Optional: thoda bold text */
+    text-decoration: none;
+    /* Underline remove */
+  }
+
+  .hire-btn:hover {
+    color: #128C7E;
+    /* Hover color - dark green */
+    /* Agar orange hover chahiye, use dark orange #FF8C00 */
+  }
+</style>
+
+
+<body>
+
+ <nav>
+ <a href="index.html#home" class="logo-container">
+    <img src="images/Dlogo.png" class="logo-img">
+    <div class="logo-text">DEEPAK RAJPUT</div>
+  </a>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+
+ <ul id="menu">
+  <li><a href="index.html#home">Home</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li>
+        <a href="https://wa.me/919714004207?text=Hi%20Deepak,%20I%20want%20to%20discuss%20a%20design%20project" class="hire-btn" target="_blank">
+          Hire Me
+        </a>
+      </li>
+</ul>
+
+</nav>
+  <section id="blog-section" style="padding: 60px 8%; background-color: var(--light-bg);">
+  
+  <h2 class="section-title" style="text-align: center; font-size: 2.5rem; margin-bottom: 10px; color: var(--primary-orange);">Insights & Design Blog</h2>
+  <p style="text-align: center; color:#666666; max-width: 600px; margin: 0 auto 40px; font-size: 1rem;">
+    Explore articles on graphic design trends, branding strategies, packaging techniques, and industry insights.
+  </p>
+
+  <div class="blog-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+    
+    <div class="blog-card" onclick="openBlogModal('modal-branding')">
+      <div class="blog-img-container">
+        <img src="images/blog/branding-trends.jpg" alt="Branding Trends" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-palette fa-3x\'></i>';">
+      </div>
+      <div style="padding: 25px;">
+        <span class="blog-badge">Branding</span>
+        <h3 class="blog-card-title">The Impact of Minimalist Branding in 2026</h3>
+        <p class="blog-snippet">Discover how modern brands are shedding complexity to build powerful, unforgettable visual relationships with customers.</p>
+        <span class="read-more-btn">Read Full Post <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-packaging')">
+      <div class="blog-img-container">
+        <img src="images/blog/packaging-design.jpg" alt="Packaging Design" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-box-open fa-3x\'></i>';">
+      </div>
+      <div style="padding: 25px;">
+        <span class="blog-badge">Packaging</span>
+        <h3 class="blog-card-title">Designing Packaging That Explodes Off the Shelf</h3>
+        <p class="blog-snippet">A practical guide to color psychology, structure, and graphic placement to maximize retail visibility and sales.</p>
+        <span class="read-more-btn">Read Full Post <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-web')">
+      <div class="blog-img-container">
+        <img src="images/blog/web-trends.jpg" alt="Web Design" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-code fa-3x\'></i>';">
+      </div>
+      <div style="padding: 25px;">
+        <span class="blog-badge">Web Design</span>
+        <h3 class="blog-card-title">Balancing UX Design with High Visual Aesthetics</h3>
+        <p class="blog-snippet">How to structure portfolios and marketing layouts so they look breathtaking without breaking usability rules.</p>
+        <span class="read-more-btn">Read Full Post <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-graphic')">
+      <div class="blog-img-container">
+        <img src="images/blog/graphic-design.jpg" alt="Graphic Design" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-bezier-curve fa-3x\'></i>';">
+      </div>
+      <div style="padding: 25px;">
+        <span class="blog-badge">Graphic Design</span>
+        <h3 class="blog-card-title">Mastering Visual Hierarchy in Graphic Layouts</h3>
+        <p class="blog-snippet">Learn how to strategically guide a viewer's eyes through your promotional collateral using scale, contrast, and balance.</p>
+        <span class="read-more-btn">Read Full Post <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-marketing')">
+      <div class="blog-img-container">
+        <img src="images/blog/digital-marketing.jpg" alt="Digital Marketing" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-chart-line fa-3x\'></i>';">
+      </div>
+      <div style="padding: 25px;">
+        <span class="blog-badge">Digital Marketing</span>
+        <h3 class="blog-card-title">Data-Driven Design: Boosting Ad Conversions</h3>
+        <p class="blog-snippet">How combining performance metrics with compelling design creates high-converting funnels that scale businesses.</p>
+        <span class="read-more-btn">Read Full Post <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-social')">
+      <div class="blog-img-container">
+        <img src="images/blog/social-media.jpg" alt="Social Media Marketing" onerror="this.style.display='none'; this.parentNode.innerHTML='<i class=\'fas fa-share-alt fa-3x\'></i>';">
+      </div>
+      <div style="padding: 25px;">
+        <span class="blog-badge">Social Media</span>
+        <h3 class="blog-card-title">Thumb-Stopping Social Media Creative Strategies</h3>
+        <p class="blog-snippet">Unlocking the layout secrets to keeping audiences engaged and stopping the scroll on highly competitive feeds.</p>
+        <span class="read-more-btn">Read Full Post <i class="fas fa-arrow-right"></i></span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-packagingtips')">
+      <div class="blog-img-container">
+        <i class="fas fa-box-open fa-3x"></i>
+      </div>
+      <div style="padding: 25px;">
+        <span class="blog-badge">Packaging Design</span>
+        <h3 class="blog-card-title">Packaging Design Tips: How Great Packaging Can Increase Product Sales</h3>
+        <p class="blog-snippet">
+          Learn how effective packaging design attracts customers, strengthens brand identity, improves shelf visibility, and increases product sales.
+        </p>
+        <span class="read-more-btn">
+          Read Full Post <i class="fas fa-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-fmcg')">
+      <div class="blog-img-container">
+        <i class="fas fa-shopping-basket fa-3x"></i>
+      </div>
+      <div style="padding:25px;">
+        <span class="blog-badge">FMCG Packaging</span>
+        <h3 class="blog-card-title">FMCG Packaging Trends in 2026: What Brands Need to Know</h3>
+        <p class="blog-snippet">
+          Discover the latest FMCG packaging trends including sustainability, smart packaging, premium branding, and consumer-focused innovation.
+        </p>
+        <span class="read-more-btn">
+          Read Full Post <i class="fas fa-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-logo')">
+      <div class="blog-img-container">
+        <i class="fas fa-pen-nib fa-3x"></i>
+      </div>
+      <div style="padding:25px;">
+        <span class="blog-badge">Logo Design</span>
+        <h3 class="blog-card-title">Logo Design Mistakes That Can Damage Your Brand</h3>
+        <p class="blog-snippet">
+          Discover common logo design mistakes that reduce brand recognition, credibility, and customer trust.
+        </p>
+        <span class="read-more-btn">
+          Read Full Post <i class="fas fa-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="blog-card" onclick="openBlogModal('modal-socialmedia')">
+      <div class="blog-img-container">
+        <i class="fas fa-share-alt fa-3x"></i>
+      </div>
+      <div style="padding:25px;">
+        <span class="blog-badge">Social Media Design</span>
+        <h3 class="blog-card-title">
+          Social Media Design Tips for Better Engagement and Brand Growth
+        </h3>
+        <p class="blog-snippet">
+          Learn how professional social media design can increase engagement, strengthen branding, and drive business growth.
+        </p>
+        <span class="read-more-btn">
+          Read Full Post <i class="fas fa-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+
+
+    <div class="blog-card" onclick="openBlogModal('modal-brandingguide')">
+      <div class="blog-img-container">
+        <i class="fas fa-bullhorn fa-3x"></i>
+      </div>
+      <div style="padding:25px;">
+        <span class="blog-badge">Branding</span>
+        <h3 class="blog-card-title">Branding Guide for Small Business: Building a Strong Brand Identity</h3>
+        <p class="blog-snippet">
+          Learn how small businesses can build a strong brand identity, increase customer trust, and stand out from competitors.
+        </p>
+        <span class="read-more-btn">
+          Read Full Post <i class="fas fa-arrow-right"></i>
+        </span>
+      </div>
+    </div>
+
+  </div> </section>
+
+<div id="modal-branding" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-branding')">&times;</span>
+    <span class="modal-badge">Branding</span>
+    <h2 class="modal-title">The Impact of Minimalist Branding in 2026</h2>
+    <div class="modal-meta">Published by Deepak Rajput • 15+ Years Experience</div>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <div class="modal-body">
+      <p>Minimalism in 2026 isn't just about empty space; it's about extreme intentionality. With shrinking consumer attention spans, a brand visual system must communicate identity in less than a second.</p>
+      <p>Successful execution relies heavily on custom typography and adaptive color spaces that work flawlessly across augmented reality (AR) platforms and traditional physical print setups alike.</p>
+      <p>As a designer, the challenge shifts from what can be added to what cannot be removed. Stripping away the noise allows the core message of the brand to connect deeply with the targeted audience, creating cleaner recognition metrics and long-term brand equity.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-packaging" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-packaging')">&times;</span>
+    <span class="modal-badge">Packaging</span>
+    <h2 class="modal-title">Designing Packaging That Explodes Off the Shelf</h2>
+    <div class="modal-meta">Published by Deepak Rajput • 15+ Years Experience</div>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <div class="modal-body">
+      <p>To dominate retail physical environments, your structural design must match its graphical ambition. Structural form factors should feel satisfying in the hand while prioritizing ecological workflows.</p>
+      <p>Using contrasting tactile finishes—like combining high-gloss varnishes alongside matte textures—creates visceral user experiences before the product box is even opened.</p>
+      <p>In addition, clear typographic hierarchy ensures that compliance data and key sales hooks are legible at first glance. Good packaging speaks directly to customer needs while telling a compelling visual story on a crowded store shelf.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-web" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-web')">&times;</span>
+    <span class="modal-badge">Web Design</span>
+    <h2 class="modal-title">Balancing UX Design with High Visual Aesthetics</h2>
+    <div class="modal-meta">Published by Deepak Rajput • 15+ Years Experience</div>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <div class="modal-body">
+      <p>Great web design sits squarely at the crossroads of artistic direction and functional layout rules. A gorgeous UI fails if users struggle to track your key presentation highlights.</p>
+      <p>Focus on smooth asynchronous performance transitions, smart semantic layout rules, and clear visual hierarchies that elegantly guide actions directly toward conversion spaces.</p>
+      <p>When custom motion and functional graphics are balanced correctly, user engagement increases without driving up page loading speeds. Keeping layouts light, accessible, and breathtaking ensures both design performance and visual aesthetic standards are strictly maintained.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-graphic" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-graphic')">&times;</span>
+    <span class="modal-badge">Graphic Design</span>
+    <h2 class="modal-title">Mastering Visual Hierarchy in Graphic Layouts</h2>
+    <div class="modal-meta">Published by Deepak Rajput • 15+ Years Experience</div>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <div class="modal-body">
+      <p>Visual hierarchy is the invisible force that directs how information is consumed. Without clear structure, an exceptional design solution becomes nothing more than chaotic decorative artwork.</p>
+      <p>By leveraging dynamic scaling rules, high-contrast typography pairings, and intentional negative space distribution, you can control precisely what a user notices first, second, and last.</p>
+      <p>Whether creating corporate print brochures or dynamic presentation banners, solidifying your primary visual anchor points ensures key marketing statements retain maximum communication impact.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-marketing" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-marketing')">&times;</span>
+    <span class="modal-badge">Digital Marketing</span>
+    <h2 class="modal-title">Data-Driven Design: Boosting Ad Conversions</h2>
+    <div class="modal-meta">Published by Deepak Rajput • 15+ Years Experience</div>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <div class="modal-body">
+      <p>In digital marketing ecosystems, design and data must go hand-in-hand. Beautiful designs mean very little if they fail to guide target prospective audiences down your intent pathways.</p>
+      <p>By studying behavioral heatmaps and real-time click tracking metrics, you can refine button placements, color pop values, and call-to-action positions to optimize landing page engagement curves seamlessly.</p>
+      <p>A/B testing minor changes—such as tweaking a headline size or modifying background contrast ratios—frequently leads to immediate improvements in customer conversions and long-term campaign returns.</p>
+    </div>
+  </div>
+</div>
+<div id="modal-social" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-social')">&times;</span>
+    <span class="modal-badge">Social Media</span>
+    <h2 class="modal-title">Thumb-Stopping Social Media Creative Strategies</h2>
+    <div class="modal-meta">Published by Deepak Rajput • 15+ Years Experience</div>
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+    <div class="modal-body">
+      <p>Social media streams move incredibly fast. To gain traction among dense algorithmic updates, your brand graphics need to command focus instantly within the first split-second of exposure.</p>
+      <p>Achieving this requires bold layouts, sharp imagery, and tight typographic framing that speaks clearly even on smaller smartphone screens.</p>
+      <p>Maintaining strong creative consistency across platforms like Instagram, LinkedIn, and Facebook builds rapid top-of-mind recall, turning occasional scrollers into loyal community followers.</p>
+    </div>
+  </div>
+</div>
+
+<div id="modal-packagingtips" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-packagingtips')">&times;</span>
+
+    <span class="modal-badge">Packaging Design</span>
+
+    <h2 class="modal-title">
+      Packaging Design Tips: How Great Packaging Can Increase Product Sales
+    </h2>
+
+    <div class="modal-meta">
+      Published by Deepak Rajput • 15+ Years Experience
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+
+    <div class="modal-body">
+
+      <p>
+        Packaging design is more than just a product cover. It is the first thing customers notice before making a purchase decision. A well-designed package helps build trust, attract attention, and improve brand recognition.
+      </p>
+
+      <h3>1. Keep the Design Simple and Clear</h3>
+      <p>
+        Avoid overcrowding the package with too much text or graphics. A clean and professional design helps customers understand the product quickly.
+      </p>
+
+      <h3>2. Focus on Brand Identity</h3>
+      <p>
+        Use consistent colors, fonts, and logos that represent your brand. Strong branding makes products easily recognizable on store shelves.
+      </p>
+
+      <h3>3. Choose the Right Colors</h3>
+      <p>
+        Colors influence customer emotions and buying decisions. Select colors that match your product category and target audience.
+      </p>
+
+      <h3>4. Use High-Quality Images and Graphics</h3>
+      <p>
+        Professional images and illustrations improve product appearance and create a premium feel.
+      </p>
+
+      <h3>5. Make Important Information Visible</h3>
+      <p>
+        Product name, features, ingredients, manufacturing details, and usage instructions should be easy to read.
+      </p>
+
+      <h3>6. Consider Packaging Material</h3>
+      <p>
+        The material should protect the product while maintaining an attractive appearance. Eco-friendly packaging is becoming increasingly popular among consumers.
+      </p>
+
+      <h3>7. Design for Your Target Audience</h3>
+      <p>
+        Understand your customers and create packaging that appeals to their preferences and expectations.
+      </p>
+
+      <h3>8. Ensure Print Quality</h3>
+      <p>
+        Even a great design can look poor if printing quality is low. Always use high-resolution artwork and professional printing standards.
+      </p>
+
+      <h3>9. Differentiate from Competitors</h3>
+      <p>
+        Study competing products and create a unique design that stands out on the shelf.
+      </p>
+
+      <h3>10. Test Before Final Production</h3>
+      <p>
+        Review the design, colors, readability, and packaging structure before mass production to avoid costly mistakes.
+      </p>
+
+      <h3 style="color:#FF6600; font-weight:700;">
+  Conclusion
+</h3>
+      <p>
+        Effective packaging design is a powerful marketing tool that can increase product visibility, strengthen brand identity, and boost sales. Investing in professional packaging design helps businesses create a lasting impression and gain a competitive advantage in the market.
+      </p>
+
+      <p>
+        For professional packaging design services, businesses should work with experienced designers who understand branding, consumer behavior, and print production requirements.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div id="modal-fmcg" class="blog-modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeBlogModal('modal-fmcg')">&times;</span>
+
+    <span class="modal-badge">FMCG Packaging</span>
+
+    <h2 class="modal-title">
+      FMCG Packaging Trends in 2026: What Brands Need to Know
+    </h2>
+
+    <div class="modal-meta">
+      Published by Deepak Rajput • 15+ Years Experience
+    </div>
+
+    <hr style="border:0; border-top:1px solid #eee; margin:20px 0;">
+
+    <div class="modal-body">
+
+      <p>
+        The Fast-Moving Consumer Goods (FMCG) industry is evolving rapidly, and packaging plays a critical role in influencing consumer purchasing decisions. Modern consumers are looking for attractive, functional, and sustainable packaging solutions. As competition increases, brands must stay updated with the latest FMCG packaging trends to remain relevant in the market.
+      </p>
+
+      <h3>1. Sustainable Packaging</h3>
+      <p>
+        Sustainability has become one of the biggest trends in the packaging industry. Consumers prefer brands that use eco-friendly materials and reduce environmental impact. Recyclable, biodegradable, and reusable packaging solutions are gaining popularity across various product categories.
+      </p>
+
+      <h3>2. Minimalist Design</h3>
+      <p>
+        Modern packaging designs focus on simplicity and clarity. Clean layouts, limited color palettes, and easy-to-read typography help products stand out while creating a premium appearance.
+      </p>
+
+      <h3>3. Smart Packaging Technology</h3>
+      <p>
+        Brands are increasingly using QR codes and digital features on packaging. Customers can scan codes to access product information, usage instructions, promotional offers, and brand stories.
+      </p>
+
+      <h3>4. Premium Packaging Experience</h3>
+      <p>
+        Consumers are willing to pay more for products that offer a premium experience. High-quality finishes, embossing, metallic effects, and unique structural designs help brands create a strong first impression.
+      </p>
+
+      <h3>5. Personalized Packaging</h3>
+      <p>
+        Customization is becoming a major trend. Brands are creating packaging that targets specific customer groups, regional markets, and seasonal campaigns to improve customer engagement.
+      </p>
+
+      <h3>6. Transparent Product Information</h3>
+      <p>
+        Today's consumers want complete information before making a purchase. Packaging that clearly displays ingredients, benefits, nutritional values, and certifications helps build trust and credibility.
+      </p>
+
+      <h3>7. Bold Typography and Vibrant Colors</h3>
+      <p>
+        Many FMCG brands are using large typography and eye-catching colors to attract attention on crowded retail shelves. Strong visual elements improve product visibility and brand recall.
+      </p>
+
+      <h3>8. Convenient and Functional Packaging</h3>
+      <p>
+        Consumers value convenience. Easy-to-open packs, resealable packaging, travel-friendly sizes, and user-friendly designs improve customer satisfaction and product usability.
+      </p>
+
+      <h3>9. E-Commerce Friendly Packaging</h3>
+      <p>
+        With the growth of online shopping, packaging must protect products during shipping while maintaining visual appeal. Durable and lightweight packaging solutions are becoming increasingly important.
+      </p>
+
+      <h3>10. Brand Storytelling Through Packaging</h3>
+      <p>
+        Packaging is now used as a communication tool. Brands share their values, history, mission, and product benefits directly on the package, helping create stronger emotional connections with customers.
+      </p>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Benefits of Following FMCG Packaging Trends
+        </h3>
+
+        <ul>
+          <li>Improves shelf visibility</li>
+          <li>Enhances brand recognition</li>
+          <li>Increases customer trust</li>
+          <li>Boosts product sales</li>
+          <li>Creates a competitive advantage</li>
+          <li>Supports sustainability goals</li>
+        </ul>
+
+      </div>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin-top:20px;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Conclusion
+        </h3>
+
+        <p>
+          FMCG packaging is no longer just about protecting products. It has become a powerful marketing and branding tool. Businesses that adopt modern packaging trends can attract more customers, improve brand value, and achieve long-term growth.
+        </p>
+
+        <p>
+          By focusing on sustainability, innovation, convenience, and attractive design, FMCG brands can successfully meet changing consumer expectations in 2026 and beyond.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="modal-logo" class="blog-modal">
+  <div class="modal-content">
+
+    <span class="close-modal" onclick="closeBlogModal('modal-logo')">&times;</span>
+
+    <span class="modal-badge">Logo Design</span>
+
+    <h2 class="modal-title">
+      Logo Design Mistakes That Can Damage Your Brand
+    </h2>
+
+    <div class="modal-meta">
+      Published by Deepak Rajput • 15+ Years Experience
+    </div>
+
+    <hr style="border:0; border-top:1px solid #eee; margin:20px 0;">
+
+    <div class="modal-body">
+
+      <p>
+        A logo is one of the most important visual elements of a brand. It represents a company's identity, values, and professionalism. A well-designed logo helps build trust and recognition, while a poorly designed logo can negatively impact customer perception. Many businesses make common logo design mistakes that reduce their brand's effectiveness and credibility.
+      </p>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+        <h3 style="color:#FF6600; margin-top:0;">
+          Why Logo Design Matters
+        </h3>
+
+        <p>
+          Your logo is often the first thing potential customers notice about your business. It appears on your website, packaging, social media profiles, marketing materials, and advertisements. A professional logo creates a strong first impression and helps establish a memorable brand identity.
+        </p>
+      </div>
+
+      <h3>1. Using Too Many Colors</h3>
+      <p>
+        While colors play an important role in branding, using too many colors can make a logo look confusing and unprofessional. A simple color palette creates a cleaner and more recognizable design.
+      </p>
+
+      <h3>2. Following Design Trends Blindly</h3>
+      <p>
+        Design trends change over time. A logo based entirely on current trends may quickly become outdated. Focus on creating a timeless logo that remains effective for years.
+      </p>
+
+      <h3>3. Overcomplicating the Design</h3>
+      <p>
+        Many businesses try to include too many elements, icons, or effects in their logo. A complex design is difficult to remember and may not scale well across different platforms.
+      </p>
+
+      <h3>4. Poor Font Selection</h3>
+      <p>
+        Typography significantly affects brand perception. Using decorative or hard-to-read fonts can reduce professionalism and make the logo difficult to understand.
+      </p>
+
+      <h3>5. Copying Competitors</h3>
+      <p>
+        A logo should be unique and distinguish your business from competitors. Similar-looking logos can confuse customers and weaken brand identity.
+      </p>
+
+      <h3>6. Ignoring Scalability</h3>
+      <p>
+        A logo should look good on everything from business cards to billboards. Designs with excessive detail often lose clarity when resized.
+      </p>
+
+      <h3>7. Using Low-Quality Graphics</h3>
+      <p>
+        Pixelated or low-resolution graphics create an unprofessional appearance. Always design logos in vector format for maximum quality and flexibility.
+      </p>
+
+      <h3>8. Not Considering Brand Identity</h3>
+      <p>
+        Your logo should reflect your brand's personality, industry, and target audience. A mismatch between the logo and the brand message can confuse customers.
+      </p>
+
+      <h3>9. Poor Color Psychology</h3>
+      <p>
+        Different colors communicate different emotions. Choosing colors without understanding their psychological impact can weaken your branding efforts.
+      </p>
+
+      <h3>10. Skipping Professional Design Expertise</h3>
+      <p>
+        Many businesses attempt to create logos without proper design knowledge. Investing in professional logo design often leads to stronger branding and better long-term results.
+      </p>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Benefits of a Professional Logo
+        </h3>
+
+        <ul>
+          <li>Builds brand recognition</li>
+          <li>Creates a strong first impression</li>
+          <li>Improves credibility and trust</li>
+          <li>Supports marketing efforts</li>
+          <li>Enhances customer loyalty</li>
+        </ul>
+
+      </div>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin-top:20px;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Conclusion
+        </h3>
+
+        <p>
+          A logo is much more than a graphic symbol. It is a key part of your brand identity and business success. Avoiding common logo design mistakes helps create a professional, memorable, and effective logo that supports long-term brand growth.
+        </p>
+
+        <p>
+          Investing in quality logo design is an investment in your business's future. A strong logo strengthens brand recognition, builds trust, and helps your business stand out in a competitive marketplace.
+        </p>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+<div id="modal-socialmedia" class="blog-modal">
+  <div class="modal-content">
+
+    <span class="close-modal" onclick="closeBlogModal('modal-socialmedia')">&times;</span>
+
+    <span class="modal-badge">Social Media Design</span>
+
+    <h2 class="modal-title">
+      Social Media Design Tips for Better Engagement and Brand Growth
+    </h2>
+
+    <div class="modal-meta">
+      Published by Deepak Rajput • 15+ Years Experience
+    </div>
+
+    <hr style="border:0; border-top:1px solid #eee; margin:20px 0;">
+
+    <div class="modal-body">
+
+      <p>
+        In today's digital world, social media is one of the most effective ways to connect with customers, promote products, and build a strong brand presence. However, simply posting content is not enough. Well-designed social media graphics play a crucial role in attracting attention, increasing engagement, and driving business growth.
+      </p>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Why Social Media Design Matters
+        </h3>
+
+        <p>
+          Social media users scroll through hundreds of posts every day. Attractive and professional designs help your content stand out from competitors and encourage users to stop, view, and interact with your posts.
+        </p>
+
+        <ul>
+          <li>Higher engagement rates</li>
+          <li>Improved brand recognition</li>
+          <li>Increased website traffic</li>
+          <li>Better lead generation</li>
+          <li>Stronger customer trust</li>
+        </ul>
+
+      </div>
+
+      <h3>1. Maintain Consistent Branding</h3>
+
+      <p>
+        Consistency is essential for building a recognizable brand. Use the same logo, colors, typography, and visual style across all social media platforms. This helps audiences instantly identify your content.
+      </p>
+
+      <h3>2. Use High-Quality Images and Graphics</h3>
+
+      <p>
+        Low-quality visuals can make a business appear unprofessional. Always use high-resolution images, illustrations, and graphics that represent your brand positively.
+      </p>
+
+      <h3>3. Keep Your Designs Clean and Simple</h3>
+
+      <p>
+        Avoid overcrowding your designs with too much text or unnecessary elements. A clean layout improves readability and makes the message easier to understand.
+      </p>
+
+      <h3>4. Focus on Strong Visual Hierarchy</h3>
+
+      <p>
+        Important information should be visible at first glance. Use larger fonts, bold headlines, and proper spacing to guide the viewer's attention toward key messages.
+      </p>
+
+      <h3>5. Choose the Right Colors</h3>
+
+      <p>
+        Colors influence emotions and purchasing decisions. Select colors that align with your brand identity and create the desired emotional response from your audience.
+      </p>
+
+      <h3>6. Write Attention-Grabbing Headlines</h3>
+
+      <p>
+        A compelling headline can significantly increase engagement. Use short, clear, and benefit-driven headlines that encourage users to learn more.
+      </p>
+
+      <h3>7. Optimize Designs for Mobile Devices</h3>
+
+      <p>
+        Most social media users access platforms through smartphones. Ensure your designs are mobile-friendly, readable, and properly formatted for different screen sizes.
+      </p>
+
+      <h3>8. Include a Clear Call-to-Action</h3>
+
+      <p>
+        Every social media post should encourage users to take action.
+      </p>
+
+      <ul>
+        <li>Contact Us</li>
+        <li>Learn More</li>
+        <li>Visit Our Website</li>
+        <li>Get a Free Quote</li>
+        <li>Shop Now</li>
+      </ul>
+
+      <p>
+        A strong call-to-action helps increase conversions and engagement.
+      </p>
+
+      <h3>9. Create Platform-Specific Content</h3>
+
+      <p>
+        <strong>Instagram:</strong> Focus on visually appealing graphics and creative storytelling.
+      </p>
+
+      <p>
+        <strong>Facebook:</strong> Use informative content with attractive visuals and clear messaging.
+      </p>
+
+      <p>
+        <strong>LinkedIn:</strong> Maintain a professional design style that highlights expertise and business value.
+      </p>
+
+      <p>
+        <strong>YouTube:</strong> Create eye-catching thumbnails that encourage clicks and improve video performance.
+      </p>
+
+      <h3>10. Share Valuable Content</h3>
+
+      <p>
+        The most successful social media content provides value to the audience. Educational tips, industry insights, case studies, and useful information often perform better than purely promotional posts.
+      </p>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Common Social Media Design Mistakes
+        </h3>
+
+        <ul>
+          <li>Using too many fonts</li>
+          <li>Poor color combinations</li>
+          <li>Excessive text</li>
+          <li>Low-resolution images</li>
+          <li>Weak branding</li>
+          <li>No call-to-action</li>
+        </ul>
+
+      </div>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          How Professional Design Supports Brand Growth
+        </h3>
+
+        <p>
+          Professional social media design helps businesses create a stronger online presence. Consistent and engaging content builds credibility, improves customer relationships, and increases brand awareness over time.
+        </p>
+
+        <p>
+          Whether you are a small business, startup, or established company, investing in high-quality social media design can deliver long-term marketing benefits and contribute significantly to business growth.
+        </p>
+
+      </div>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin-top:20px;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Conclusion
+        </h3>
+
+        <p>
+          Effective social media design is more than just creating attractive graphics. It is about communicating your brand message clearly, engaging your audience, and encouraging action.
+        </p>
+
+        <p>
+          By following these social media design tips, businesses can improve engagement, strengthen their brand identity, and achieve sustainable growth through social media marketing.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-brandingguide" class="blog-modal">
+  <div class="modal-content">
+
+    <span class="close-modal" onclick="closeBlogModal('modal-brandingguide')">&times;</span>
+
+    <span class="modal-badge">Branding</span>
+
+    <h2 class="modal-title">
+      Branding Guide for Small Business: Building a Strong Brand Identity
+    </h2>
+
+    <div class="modal-meta">
+      Published by Deepak Rajput • 15+ Years Experience
+    </div>
+
+    <hr style="border:0; border-top:1px solid #eee; margin:20px 0;">
+
+    <div class="modal-body">
+
+      <p>
+        Branding is more than just a logo or a business name. It is the complete experience customers have with your company. A strong brand helps small businesses stand out from competitors, build trust, and attract loyal customers. Whether you are starting a new business or improving an existing one, effective branding can significantly impact long-term success.
+      </p>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+        <h3 style="color:#FF6600; margin-top:0;">
+          What Is Branding?
+        </h3>
+
+        <p>
+          Branding is the process of creating a unique identity for your business. It includes your logo, colors, messaging, values, customer experience, and overall reputation in the market.
+        </p>
+
+        <p>
+          A strong brand helps customers recognize and remember your business.
+        </p>
+      </div>
+
+      <h3>Why Branding Is Important for Small Businesses</h3>
+
+      <p>
+        Small businesses often compete with larger companies that have bigger marketing budgets. Effective branding helps level the playing field by creating a memorable and professional image.
+      </p>
+
+      <p><strong>Benefits of Strong Branding:</strong></p>
+
+      <ul>
+        <li>Increased customer trust</li>
+        <li>Better brand recognition</li>
+        <li>Higher customer loyalty</li>
+        <li>Improved marketing effectiveness</li>
+        <li>Greater competitive advantage</li>
+      </ul>
+
+      <h3>1. Define Your Brand Purpose</h3>
+      <p>
+        Start by identifying why your business exists. Understand your mission, values, and goals. A clear purpose helps guide all branding decisions.
+      </p>
+
+      <h3>2. Understand Your Target Audience</h3>
+      <p>
+        Successful branding begins with understanding your customers.
+      </p>
+
+      <p><strong>Identify:</strong></p>
+
+      <ul>
+        <li>Age group</li>
+        <li>Interests</li>
+        <li>Buying behavior</li>
+        <li>Problems they need solved</li>
+      </ul>
+
+      <p>
+        Knowing your audience helps create branding that connects with them emotionally.
+      </p>
+
+      <h3>3. Create a Professional Logo</h3>
+      <p>
+        Your logo is a visual representation of your brand. Invest in a professional logo that reflects your business values and appeals to your target market.
+      </p>
+
+      <h3>4. Choose Brand Colors and Typography</h3>
+      <p>
+        Consistent colors and fonts create a recognizable identity. Select a color palette and typography style that align with your brand personality.
+      </p>
+
+      <h3>5. Develop a Unique Brand Voice</h3>
+      <p>
+        Your communication style should remain consistent across all channels. Whether professional, friendly, or creative, your brand voice should reflect your business identity.
+      </p>
+
+      <h3>6. Build a Professional Website</h3>
+      <p>
+        Your website often serves as the first impression for potential customers.
+      </p>
+
+      <p><strong>Ensure it is:</strong></p>
+
+      <ul>
+        <li>Mobile-friendly</li>
+        <li>Fast-loading</li>
+        <li>Easy to navigate</li>
+        <li>Professionally designed</li>
+      </ul>
+
+      <h3>7. Maintain Consistency Across Platforms</h3>
+      <p>
+        Consistency strengthens brand recognition. Use the same logo, colors, messaging, and design style on:
+      </p>
+
+      <ul>
+        <li>Website</li>
+        <li>Social Media</li>
+        <li>Business Cards</li>
+        <li>Packaging</li>
+        <li>Marketing Materials</li>
+      </ul>
+
+      <h3>8. Focus on Customer Experience</h3>
+      <p>
+        Branding is not limited to visuals. Every interaction with customers contributes to your brand image. Excellent customer service helps build trust and loyalty.
+      </p>
+
+      <h3>9. Use Social Media Effectively</h3>
+      <p>
+        Social media platforms provide excellent opportunities to build brand awareness. Share valuable content, engage with followers, and maintain a consistent visual identity.
+      </p>
+
+      <h3>10. Monitor and Improve Your Brand</h3>
+      <p>
+        Branding is an ongoing process. Regularly evaluate customer feedback, market trends, and business goals to ensure your brand remains relevant and effective.
+      </p>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin:25px 0;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Common Branding Mistakes
+        </h3>
+
+        <ul>
+          <li>Inconsistent branding</li>
+          <li>Poor logo design</li>
+          <li>Unclear messaging</li>
+          <li>Ignoring customer feedback</li>
+          <li>Weak online presence</li>
+        </ul>
+
+      </div>
+
+      <div style="background:#fff4eb; border-left:5px solid #FF6600; padding:15px 20px; border-radius:8px; margin-top:20px;">
+
+        <h3 style="color:#FF6600; margin-top:0;">
+          Conclusion
+        </h3>
+
+        <p>
+          A strong brand can become one of the most valuable assets for a small business. By creating a clear identity, maintaining consistency, and focusing on customer experience, businesses can build trust, increase recognition, and achieve sustainable growth.
+        </p>
+
+        <p>
+          Effective branding is not a one-time project—it is a long-term investment that supports business success for years to come.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<style>
+
+  .blog-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.15) !important;
+  }
+
+  .blog-img-container {
+    background: #e0e0e0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    overflow: hidden;
+  }
+
+  .blog-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blog-badge {
+    font-size: 0.8rem;
+    color: var(--primary-orange);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .blog-card-title {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: var(--dark-charcoal);
+  }
+
+  .blog-snippet {
+    color: var(--gray);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .read-more-btn {
+    color: var(--primary-orange);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto;
+  }
+
+  /* Full Screen Modal Background Overlay */
+  .blog-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 2000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow-y: auto; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    backdrop-filter: blur(4px);
+    padding: 40px 20px;
+  }
+
+  /* Modal Wrapper Box */
+  .modal-content {
+    background-color: var(--white);
+    margin: auto;
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: slideIn 0.4s ease;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* Close Button Customization */
+  .close-modal {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: #aaa;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .close-modal:hover {
+    color: var(--primary-orange);
+  }
+
+  /* Modal Content Elements Styles */
+  .modal-badge {
+    font-size: 0.85rem;
+    color: var(--primary-orange);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .modal-title {
+    font-size: 2.2rem;
+    color: var(--dark-charcoal);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+
+  .modal-meta {
+    font-size: 0.9rem;
+    color: var(--gray);
+  }
+
+  .modal-body p {
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+</style>
+
+<script>
+function openBlogModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeBlogModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+window.onclick = function(event) {
+  if (event.target.classList.contains('blog-modal')) {
+    event.target.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+}
+</script>
+
+<style>
+  /* Blog Hover Effects */
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 102, 0, 0.15) !important;
+  }
+</style>
+
+</section>
+  <style>
+
+ /* ===== FOOTER CSS START ===== */
+    .footer {
+      background: var(--dark-charcoal);
+      color: white;
+      padding: 70px 10% 40px;
+      position: relative;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+
+    .footer-col h3 {
+      margin-bottom: 20px;
+      color: var(--primary-orange);
+      font-size: 20px;
+    }
+
+    .footer-col p {
+      color: #ffffff;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Arrow before each list item */
+    .footer-col ul li::before {
+      content: "⬆";
+      margin-right: 8px;
+      color: var(--primary-orange);
+      font-size: 14px;
+      vertical-align: middle;
+    }
+
+    .footer-col ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+
+    .footer-col ul li a:hover {
+      color: var(--primary-orange);
+      padding-left: 5px;
+    }
+
+    /* Social Icons */
+    .footer-social {
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    .footer-social a {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      background: #333;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+
+    .footer-social a:hover {
+      background: var(--primary-orange);
+      transform: translateY(-4px);
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #Ff6633;
+      margin-top: 40px;
+      padding-top: 20px;
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    .footer-bottom p:last-child a:hover{
+    color:#ff6600 !important;
+    }
+
+    /* ===== SCROLL TO TOP BUTTON (SQUARE) ===== */
+    .scroll-top {
+      position: fixed;
+      left: 20px;
+      bottom: 40px;
+      width: 50px;
+      /* Square width */
+      height: 50px;
+      /* Square height */
+      background: var(--primary-orange);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      /* Arrow size */
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 999;
+      border-radius: 12px;
+      /* Slightly rounded square */
+      opacity: 0;
+      pointer-events: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      /* Optional shadow */
+      transition: all 0.3s ease;
+    }
+
+    .scroll-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .scroll-top:hover {
+      background: #ff3300;
+      /* Hover color */
+      transform: translateY(-3px);
+      /* Slight lift on hover */
+    }
+
+    .footer-col {
+      text-align: left;
+      /* Force all text inside each column to align left */
+    }
+
+    /* ===== FOOTER CSS END ===== */
+  </style>
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-col">
+        <h3>About me </h3>
+        <p>
+          Creative Graphic & Web Designer based in Gujarat with 15+ years of experience
+          in branding, packaging and digital marketing.
+        </p>
+
+        <div class="footer-social" style="margin-bottom: 20px;">
+          <a href="https://share.google/dH13pSjS4Wj0UVs7J" target="_blank"><i class="fab fa-google"></i></a>
+          <a href="https://www.instagram.com//" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/DRDesign.in/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/919714004207" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+         <h3 style="color: #FF6633; margin-top: 20px; margin-bottom: 12px;">Our Rates</h3>
+        <a href="Pricing.html" style="display: inline-flex; align-items: center; justify-content: center; background-color: #FF6633 !important; color: #000000 !important; padding: 10px 20px; font-weight: 700; border-radius: 8px; text-decoration: none !important; font-size: 0.95rem; border: 2px solid #000000; box-shadow: 0 4px 0px #000000; font-family: sans-serif; transition: transform 0.2s ease;">
+          <i class="fas fa-tags" style="margin-right: 8px; color: #000000 !important; font-size: 1rem;"></i> View Pricing
+        </a>
+
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="policy.html">Policies</a></li>
+          <li><a href="Pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="index.html#services">Graphic Design</a></li>
+
+        <li><a href="index.html#services">Brand Identity</a></li>
+
+        <li><a href="product _packaging_design.html">Product Packaging Design</a></li>
+
+        <li><a href="index.html#services">Web Design</a></li>
+
+        <li><a href="index.html#services">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>📍 Vadodara, Gujarat, India</p>
+        <p>📞 +91 97140 04207</p>
+        <p>📩 JUST WHATSAPP</p>
+
+        <h3 style="margin-top:25px;">Support me</h3>
+
+        <style>
+          /* Coffee Button Wrapper */
+
+          .coffee-animate {
+            margin-top: 10px;
+            transform: scale(0.75);
+            transform-origin: left;
+            animation: coffeeFloat 2.5s ease-in-out infinite;
+          }
+
+          /* Floating Animation */
+
+          @keyframes coffeeFloat {
+
+            0% {
+              transform: scale(0.75) translateY(0px);
+            }
+
+            50% {
+              transform: scale(0.75) translateY(-6px);
+            }
+
+            100% {
+              transform: scale(0.75) translateY(0px);
+            }
+
+          }
+        </style>
+
+        <div class="coffee-animate" id="coffeeBtn">
+
+          <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button" data-slug="drdesign" data-color="#FFDD00" data-emoji="☕" data-font="Arial"
+            data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
+            data-coffee-color="#ffffff">
+            </script>
+
+        </div>
+
+
+        <script>
+
+          /* Hover animation control Buy me Coffee */
+
+          const coffee = document.getElementById("coffeeBtn");
+
+          coffee.addEventListener("mouseenter", function () {
+            coffee.style.animationPlayState = "paused";
+            coffee.style.transform = "scale(0.80)";
+          });
+
+          coffee.addEventListener("mouseleave", function () {
+            coffee.style.animationPlayState = "running";
+            coffee.style.transform = "scale(0.75)";
+          });
+
+        </script>
+
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+   <div class="footer-bottom">
+
+  <p>
+    &copy; 2026
+    <a href="https://deepakrajput227.blogspot.com/" target="_blank"
+       style="color:#ff6600; font-weight:bold; text-decoration:none;">
+      DR Design
+    </a>
+    | Built with Passion for Design
+  </p>
+
+  <p style="margin-top:10px;">
+    <a href="policesforwebsite.html#privacy-policy"
+       style="color:#ffffff; text-decoration:none;">Privacy Policy</a>
+
+    <span style="color:#ff6600;"> | </span>
+
+    <a href="policesforwebsite.html#disclaimer"
+       style="color:#ffffff; text-decoration:none;">Disclaimer</a>
+
+    <span style="color:#ff6600;"> | </span>
+
+    <a href="policesforwebsite.html#terms-conditions"
+       style="color:#ffffff; text-decoration:none;">Terms & Conditions</a>
+  </p>
+
+</div>
+
+  </footer>
+
+  <div class="btn-container">
+        <button id="upBtn" class="side-btn scroll-btn" data-label="Scroll to Top" onclick="goTop()">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <a href="https://wa.me/919714004207" target="_blank" class="side-btn wa-btn" data-label="Chat with us">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <button class="side-btn scroll-btn" data-label="Scroll to Bottom" onclick="goBottom()">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+    </div>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <script>
+    const slides = document.querySelectorAll('.hero-slides .slide');
+    let current = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.opacity = i === index ? 1 : 0;
+      });
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    // Start slideshow
+    showSlide(current);
+    setInterval(nextSlide, 4000); // 4 seconds per slide
+  </script>
+
+  <script src="js/script.js"></script>
+  <script src="js/navbarsilder.js"></script>
+  <script src="js/myfeaturedworkgallary.js"></script>
+  <script src="js/whatsappscrollbutton.js"></script>
+
+
+
+  <script>
+    // 1. Hamburger Menu Toggle Function
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+
+    // 2. Mobile Click Dropdown Logic
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      const dropdownParent = document.querySelector(".dropdown");
+
+      if (dropdownToggle) {
+        dropdownToggle.addEventListener("click", function (e) {
+          // Agar screen mobile view (<= 768px) mein hai tabhi click handle karein
+          if (window.innerWidth <= 768) {
+            e.preventDefault(); // Page link scroll/jump hone se rokega
+            dropdownParent.classList.toggle("open"); // CSS open display block karegi
+          }
+        });
+      }
+    });
+
+    // 3. Normal scroll animation scripts (Old Code)
+    const elements = document.querySelectorAll(".animate");
+    const skills = document.querySelectorAll(".skill");
+
+    function handleScroll() {
+      const trigger = window.innerHeight * 0.8;
+
+      elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < trigger) {
+          el.classList.add("show");
+        } else {
+          el.classList.remove("show");
+        }
+      });
+
+      skills.forEach(skill => {
+        const top = skill.getBoundingClientRect().top;
+        const bar = skill.querySelector(".skill-bar span");
+
+        if (top < trigger) {
+          if (bar) {
+            bar.style.width = bar.getAttribute("data-width");
+          }
+        } else {
+          if (bar) {
+            bar.style.width = "0";
+          }
+        }
+      });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+  </script>
+
+</body>
+
+</html>

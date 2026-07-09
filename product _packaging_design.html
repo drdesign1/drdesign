@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DR Design is a Vadodara-based Graphic Design and Packaging Design Agency offering Branding, Logo Design, Brochure Design, Social Media Design and Digital Marketing Services with 15+ years of experience.">
+  <meta name="author" content="Deepak Rajput Graphic Designer DR Design">
+  <meta name="robots" content="index, follow">  
+  <meta name="keywords" content="Graphic Designer Vadodara, Packaging Designer Vadodara, Web Designer Vadodara, Logo Design, Brochure Design, Product Catalogue Design, Social Media Design">
+  <link rel="icon" type="image/png" href="images/dr-design-graphic-design.png">
+
+  <title>Packaging Design Services | DR Design Vadodara</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero_section.css">
+  <link rel="stylesheet" href="css/about_me_profile_card.css">
+  <link rel="stylesheet" href="css/myfeaturedworkgallary.css">
+  <link rel="stylesheet" href="css/what_i_do.css">
+  <link rel="stylesheet" href="css/technical_expertise.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/whatsappscrollbutton.css">
+  <link rel="stylesheet" href="css/polices.css">
+  <link rel="stylesheet" href="css/pricing.css">
+
+  <style>
+    :root {
+      --primary-orange: #ff6633;
+      --dark-charcoal: #222222;
+      --light-bg: #f8f9fa;
+      --border-color: #eef0f2;
+    }
+
+    /* Hire Me link color */
+    .hire-btn {
+      color: #04c71e;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .hire-btn:hover {
+      color: #128C7E;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      font-family: 'Poppins', 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* ==========================================
+       HERO HEADER SECTION
+       ========================================== */
+    .service-hero {
+      text-align: center;
+      padding: 80px 5% 40px;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
+    }
+
+    .service-hero h1 {
+      font-size: 2.5rem;
+      color: var(--dark-charcoal);
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .service-hero h1 span {
+      color: var(--primary-orange);
+    }
+
+    .service-hero p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .cta-badge-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .cta-badge {
+      background: #fff3ee;
+      color: var(--primary-orange);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: 1px solid rgba(255, 102, 51, 0.2);
+    }
+
+    /* ==========================================
+       SEQUENTIAL LAYOUT DESIGN (NON-BOXED) WITH IMAGES
+       ========================================== */
+    .packaging-services-section {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 50px 20px 80px;
+    }
+
+    .services-sequence-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+    }
+
+    .service-sequence-row {
+      display: flex;
+      align-items: center; /* Aligns image and content vertically center */
+      gap: 40px;
+      padding: 40px 20px;
+      border-bottom: 1px solid var(--border-color);
+      transition: all 0.25s ease-in-out;
+    }
+
+    .service-sequence-row:hover {
+      background-color: #ffffff;
+      padding-left: 30px;
+      border-bottom-color: rgba(255, 102, 51, 0.3);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+    }
+
+    /* Left Side Image Container */
+    .sequence-image-box {
+      min-width: 280px;
+      width: 280px;
+      height: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .sequence-image-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .service-sequence-row:hover .sequence-image-box img {
+      transform: scale(1.05);
+    }
+
+    .sequence-body-box {
+      flex: 1;
+    }
+
+    .sequence-body-box h2 {
+  font-size: 1.6rem;
+  color: var(--dark-charcoal);
+  margin: 0 0 20px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.sequence-body-box h2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #ff6633;
+  border-radius: 50px;
+}
+
+    .sub-section-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #999;
+      margin: 15px 0 10px 0;
+      font-weight: 600;
+    }
+
+    /* Features Checklist in Vertical Sequence */
+    .features-inline-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      display: flex;
+      flex-direction: column; /* Line-by-line sequence layout */
+      gap: 10px;
+    }
+
+    .features-inline-list li {
+      position: relative;
+      padding-left: 25px;
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    .features-inline-list li i {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      color: #04c71e;
+      font-size: 0.95rem;
+    }
+
+    /* Tags Visual Items Layout */
+    .visual-tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 5px;
+    }
+
+    .product-visual-tag {
+      background: #f1f3f5;
+      color: #555;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      transition: 0.2s;
+    }
+
+    .service-sequence-row:hover .product-visual-tag {
+      background: #fff2ed;
+      color: var(--primary-orange);
+      border-color: rgba(255, 102, 51, 0.15);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .service-sequence-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 30px 10px;
+      }
+      .service-sequence-row:hover {
+        padding-left: 10px;
+      }
+      .sequence-image-box {
+        width: 100%;
+        min-width: 100%;
+        height: 200px;
+      }
+      .service-hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+    /* ==========================================
+       CONTACT BANNER SECTION
+       ========================================== */
+    .contact-banner {
+      background: linear-gradient(135deg, var(--dark-charcoal) 0%, #111 100%);
+      color: #ffffff;
+      border-radius: 20px;
+      padding: 50px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    }
+
+    .contact-banner::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 102, 51, 0.1);
+      border-radius: 50%;
+    }
+
+    .contact-banner h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .contact-banner p {
+      color: #ccc;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn-main {
+      background: var(--primary-orange);
+      color: #fff !important;
+      padding: 14px 30px;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: none;
+    }
+
+    .btn-main:hover {
+      background: #e05526;
+      transform: translateY(-2px);
+    }
+
+    .btn-wa {
+      background: #04c71e;
+    }
+
+    .btn-wa:hover {
+      background: #03a818;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html#home" class="logo-container">
+      <img src="images/Dlogo.png" alt="Deepak Rajput Logo" class="logo-img">
+      <div class="logo-text">DEEPAK RAJPUT</div>
+    </a>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="menu">
+      <li><a href="index.html#home">Home</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">About <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#about">About Me</a></li>
+          <li><a href="story.html">My Story</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#services">What I Do</a></li>
+          <li><a href="whychooseme.html">Why Choose Me</a></li>
+          <li><a href="myworkingprocess.html">My Working Process</a></li>
+          <li><a href="images/Document/Resume 24-02-2026 _.pdf" download>Download Resume</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#portfolio">Work</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="index.html#services">What I Do</a></li>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li><a href="product _packaging_design.html">Product Packaging Design</a></li> 
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" style="color:#FF6600 !important;">POLICIES <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="policy.html">Design Service Policies</a></li>
+          <li><a href="policesforwebsite.html">Website Policies</a></li>
+          <li><a href="policesforwebsite.html#privacy-policy">Privacy Policy</a></li>
+          <li><a href="policesforwebsite.html#disclaimer">Disclaimer</a></li>
+          <li><a href="policesforwebsite.html#terms-conditions">Terms & Conditions</a></li>
+        </ul>
+      </li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li>
+        <a href="https://wa.me/919714004207?text=Hi%20Deepak,%20I%20want%20to%20discuss%20a%20design%20project" class="hire-btn" target="_blank">
+          Hire Me
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <header class="service-hero">
+    
+    <h1>Professional <span>Product Packaging</span> Design</h1>
+    <p>Transform your ideas into attractive, market-ready packaging with creative, high-quality, and print-ready designs.</p>
+  </header>
+
+  <main class="packaging-services-section">
+    <div class="services-sequence-container">
+
+      <div class="service-sequence-row">
+        <div class="sequence-image-box">
+          <img src="images/packaging/PharmaceuticalPackagingDesign.png" alt="Pharmaceutical Packaging Design">
+        </div>
+        <div class="sequence-body-box">
+          <h2>Pharmaceutical Packaging Design</h2>
+          
+          <div class="sub-section-title">Services Include</div>
+          <ul class="features-inline-list">
+            <li><i class="fa-solid fa-check"></i> Medicine Boxes & Cartons Design</li>
+            <li><i class="fa-solid fa-check"></i> Syrup & Bottle Labels Design</li>
+            <li><i class="fa-solid fa-check"></i> Blister Pack & Foil Design</li>
+            <li><i class="fa-solid fa-check"></i> Pharma Visual Aids & Catalogues</li>
+            <li><i class="fa-solid fa-check"></i> Medical Leaflets (PIL)</li>
+          </ul>
+
+          <div class="sub-section-title">Visual Images / Deliverables</div>
+          <div class="visual-tags-container">
+            <span class="product-visual-tag">Medicine Box Mockups Design</span>
+            <span class="product-visual-tag">Syrup Bottle Design</span>
+            <span class="product-visual-tag">Blister Pack Design</span>
+            <span class="product-visual-tag">Medical Leaflet Design</span>
+            <span class="product-visual-tag">Pharma Catalogue Design</span>
+            <span class="product-visual-tag">Medical Icons Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-sequence-row">
+        <div class="sequence-image-box">
+          <img src="images/packaging/Cosmetic &BeautyPackaging.png" alt="Cosmetic & Beauty Packaging">
+        </div>
+        <div class="sequence-body-box">
+          <h2>Cosmetic & Beauty Packaging Design</h2>
+          
+          <div class="sub-section-title">Services Include</div>
+          <ul class="features-inline-list">
+            <li><i class="fa-solid fa-check"></i> Skincare Labels Design</li>
+            <li><i class="fa-solid fa-check"></i> Haircare Packaging Design</li>
+            <li><i class="fa-solid fa-check"></i> Tube & Bottle Design</li>
+            <li><i class="fa-solid fa-check"></i> Luxury Cosmetic Boxes Design</li>
+            <li><i class="fa-solid fa-check"></i> Pouch & Sachet Design</li>
+          </ul>
+
+          <div class="sub-section-title">Visual Images / Deliverables</div>
+          <div class="visual-tags-container">
+            <span class="product-visual-tag">Perfume Box Design</span>
+            <span class="product-visual-tag">Face Wash Tube Design</span>
+            <span class="product-visual-tag">Serum Bottle Design</span>
+            <span class="product-visual-tag">Cream Jar Design</span>
+            <span class="product-visual-tag">Cosmetic Labels Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-sequence-row">
+        <div class="sequence-image-box">
+          <img src="images/packaging/Food & FMCGPackagingDesign.png" alt="Food & FMCG Packaging">
+        </div>
+        <div class="sequence-body-box">
+          <h2>Food & FMCG Packaging Design</h2>
+          
+          <div class="sub-section-title">Services Include</div>
+          <ul class="features-inline-list">
+            <li><i class="fa-solid fa-check"></i> Food Pouches & Wrappers Design</li>
+            <li><i class="fa-solid fa-check"></i> Product Boxes Design</li>
+            <li><i class="fa-solid fa-check"></i> Stand-up Zipper Pouches Design</li>
+            <li><i class="fa-solid fa-check"></i> Bottle Labels Design</li>
+            <li><i class="fa-solid fa-check"></i> Container Packaging Design</li>
+          </ul>
+
+          <div class="sub-section-title">Visual Images / Deliverables</div>
+          <div class="visual-tags-container">
+            <span class="product-visual-tag">Chips Packet</span>
+            <span class="product-visual-tag">Coffee Pouch Design</span>
+            <span class="product-visual-tag">Spice Box</span>
+            <span class="product-visual-tag">Sauce Bottle</span>
+            <span class="product-visual-tag">Stand-up Pouch</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-sequence-row">
+        <div class="sequence-image-box">
+          <img src="images/packaging/ConsumerProductDesign.png" alt="Consumer Product Packaging">
+        </div>
+        <div class="sequence-body-box">
+          <h2>Consumer Product Packaging Design</h2>
+          
+          <div class="sub-section-title">Services Include</div>
+          <ul class="features-inline-list">
+            <li><i class="fa-solid fa-check"></i> Detergent Packaging Design</li>
+            <li><i class="fa-solid fa-check"></i> Cleaning Product Labels Design</li>
+            <li><i class="fa-solid fa-check"></i> Household Product Packaging Design</li>
+            <li><i class="fa-solid fa-check"></i> Plastic Bottle Labels Design</li>
+            <li><i class="fa-solid fa-check"></i> Product Stickers Design</li>
+          </ul>
+
+          <div class="sub-section-title">Visual Images / Deliverables</div>
+          <div class="visual-tags-container">
+            <span class="product-visual-tag">Liquid Detergent</span>
+            <span class="product-visual-tag">Surface Cleaner</span>
+            <span class="product-visual-tag">Hand Wash</span>
+            <span class="product-visual-tag">Air Freshener</span>
+            <span class="product-visual-tag">Packaging Labels</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="contact-banner">
+      <h2>Let's create packaging that sells your product.</h2>
+      <p>Professional Graphic & Packaging Designer tailored with strategic product placement elements.</p>
+      <div class="contact-buttons">
+        <a href="https://wa.me/919714004207?text=Hi%20Deepak,%20I%20want%20to%20discuss%20a%20packaging%20design%20project" class="btn-main btn-wa" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp: 9714004207
+        </a>
+        <a href="Pricing.html" class="btn-main">
+          <i class="fas fa-tags"></i> View Pricing
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <style>
+    .footer {
+      background: var(--dark-charcoal);
+      color: white;
+      padding: 70px 10% 40px;
+      position: relative;
+    }
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+    }
+    .footer-col h3 {
+      margin-bottom: 20px;
+      color: var(--primary-orange);
+      font-size: 20px;
+    }
+    .footer-col p {
+      color: #ffffff;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+    .footer-col ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-col ul li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .footer-col ul li::before {
+      content: "⬆";
+      margin-right: 8px;
+      color: var(--primary-orange);
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .footer-col ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: 0.3s;
+    }
+    .footer-col ul li a:hover {
+      color: var(--primary-orange);
+      padding-left: 5px;
+    }
+    .footer-social {
+      margin-top: 15px;
+      text-align: left;
+    }
+    .footer-social a {
+      display: inline-block;
+      margin-right: 10px;
+      color: white;
+      background: #333;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      text-align: center;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    .footer-social a:hover {
+      background: var(--primary-orange);
+      transform: translateY(-4px);
+    }
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #ff6633;
+      margin-top: 40px;
+      padding-top: 20px;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    .footer-bottom p:last-child a:hover {
+      color: #ff6600 !important;
+    }
+    .scroll-top {
+      position: fixed;
+      left: 20px;
+      bottom: 40px;
+      width: 50px;
+      height: 50px;
+      background: var(--primary-orange);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 26px;
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 999;
+      border-radius: 12px;
+      opacity: 0;
+      pointer-events: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+    .scroll-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .scroll-top:hover {
+      background: #ff3300;
+      transform: translateY(-3px);
+    }
+    .footer-col {
+      text-align: left;
+    }
+  </style>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>About me</h3>
+        <p>Creative Graphic & Web Designer based in Gujarat with 15+ years of experience in branding, packaging and digital marketing.</p>
+        <div class="footer-social" style="margin-bottom: 20px;">
+          <a href="https://share.google/dH13pSjS4Wj0UVs7J" target="_blank"><i class="fab fa-google"></i></a>
+          <a href="https://www.instagram.com//" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/DRDesign.in/" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://wa.me/919714004207" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <h3 style="color: #ff6633; margin-top: 20px; margin-bottom: 12px;">Our Rates</h3>
+        <a href="Pricing.html" style="display: inline-flex; align-items: center; justify-content: center; background-color: #ff6633 !important; color: #000000 !important; padding: 10px 20px; font-weight: 700; border-radius: 8px; text-decoration: none !important; font-size: 0.95rem; border: 2px solid #000000; box-shadow: 0 4px 0px #000000; font-family: sans-serif; transition: transform 0.2s ease;">
+          <i class="fas fa-tags" style="margin-right: 8px; color: #000000 !important; font-size: 1rem;"></i> View Pricing
+        </a>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="policy.html">Policies</a></li>
+          <li><a href="Pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+        <li><a href="index.html#services">Graphic Design</a></li>
+
+        <li><a href="index.html#services">Brand Identity</a></li>
+
+        <li><a href="product _packaging_design.html">Product Packaging Design</a></li>
+
+        <li><a href="index.html#services">Web Design</a></li>
+
+        <li><a href="index.html#services">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <p>📍 Vadodara, Gujarat, India</p>
+        <p>📞 +91 97140 04207</p>
+        <p>📩 JUST WHATSAPP</p>
+        <h3 style="margin-top:25px;">Support me</h3>
+        <style>
+          .coffee-animate {
+            margin-top: 10px;
+            transform: scale(0.75);
+            transform-origin: left;
+            animation: coffeeFloat 2.5s ease-in-out infinite;
+          }
+          @keyframes coffeeFloat {
+            0% { transform: scale(0.75) translateY(0px); }
+            50% { transform: scale(0.75) translateY(-6px); }
+            100% { transform: scale(0.75) translateY(0px); }
+          }
+        </style>
+        <div class="coffee-animate" id="coffeeBtn">
+          <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+            data-name="bmc-button" data-slug="drdesign" data-color="#FFDD00" data-emoji="☕" data-font="Arial"
+            data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000"
+            data-coffee-color="#ffffff">
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 <a href="https://deepakrajput227.blogspot.com/" target="_blank" style="color:#ff6600; font-weight:bold; text-decoration:none;">DR Design</a> | Built with Passion for Design</p>
+      <p style="margin-top:10px;">
+        <a href="policesforwebsite.html#privacy-policy" style="color:#ffffff; text-decoration:none;">Privacy Policy</a>
+        <span style="color:#ff6600;"> | </span>
+        <a href="policesforwebsite.html#disclaimer" style="color:#ffffff; text-decoration:none;">Disclaimer</a>
+        <span style="color:#ff6600;"> | </span>
+        <a href="policesforwebsite.html#terms-conditions" style="color:#ffffff; text-decoration:none;">Terms & Conditions</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="btn-container">
+    <button id="upBtn" class="side-btn scroll-btn" data-label="Scroll to Top" onclick="goTop()">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <a href="https://wa.me/919714004207" target="_blank" class="side-btn wa-btn" data-label="Chat with us">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button class="side-btn scroll-btn" data-label="Scroll to Bottom" onclick="goBottom()">
+      <i class="fas fa-arrow-down"></i>
+    </button>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/navbarsilder.js"></script>
+  <script src="js/myfeaturedworkgallary.js"></script>
+  <script src="js/whatsappscrollbutton.js"></script>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      const dropdownParent = document.querySelector(".dropdown");
+
+      if (dropdownToggle) {
+        dropdownToggle.addEventListener("click", function (e) {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdownParent.classList.toggle("open");
+          }
+        });
+      }
+    });
+
+    const coffee = document.getElementById("coffeeBtn");
+    if(coffee) {
+      coffee.addEventListener("mouseenter", function () {
+        coffee.style.animationPlayState = "paused";
+        coffee.style.transform = "scale(0.80)";
+      });
+      coffee.addEventListener("mouseleave", function () {
+        coffee.style.animationPlayState = "running";
+        coffee.style.transform = "scale(0.75)";
+      });
+    }
+  </script>
+
+</body>
+</html>
