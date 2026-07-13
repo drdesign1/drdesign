@@ -13,17 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-
+ <!-- Main Stylesheet --> 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/hero_section.css">
-  <link rel="stylesheet" href="css/about_me_profile_card.css">
-  <link rel="stylesheet" href="css/myfeaturedworkgallary.css">
-  <link rel="stylesheet" href="css/what_i_do.css">
-  <link rel="stylesheet" href="css/technical_expertise.css">
-  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/whatsappscrollbutton.css">
-  <link rel="stylesheet" href="css/polices.css">
-  <link rel="stylesheet" href="css/pricing.css">
   <link rel="stylesheet" href="css/why_choose_me.css">
 
   <style>
@@ -103,10 +95,7 @@
     </ul>
   </nav>
 
-  <!-- ===== NAVBAR End ===== -->
-
-
-  <!-- ===== NAVBAR End ===== -->
+   <!-- ===== NAVBAR End ===== -->
 
 
  <!-- ===== Why Choose me End  ===== -->
@@ -419,27 +408,6 @@
         coffee.style.transform = "scale(0.75)";
       });
     }
-
-    // Hamburger Menu
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("active");
-    }
-
-    // Mobile Click Dropdown Logic
-    document.addEventListener("DOMContentLoaded", function () {
-      const dropdownToggle = document.querySelector(".dropdown-toggle");
-      const dropdownParent = document.querySelector(".dropdown");
-
-      if (dropdownToggle) {
-        dropdownToggle.addEventListener("click", function (e) {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            dropdownParent.classList.toggle("open");
-          }
-        });
-      }
-    });
   </script>
 
   <script src="js/script.js"></script>

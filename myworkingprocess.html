@@ -8,27 +8,19 @@
     content="Portfolio of Deepak Rajput, a Graphics & Web Designer in Vadodara with 15+ years of experience specializing in Branding, Packaging, and Digital Marketing.">
   <title>Deepak Rajput | Graphic Designer</title>
 
- <!-- ** Plugins Needed for the Project ** -->
+<!-- ** Plugins Needed for the Project ** -->
  <!-- Bootstrap -->
 
 <link href="https://fonts.googleapis.com/css2?family=Arial&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
 
-  <!-- Main Stylesheet --> 
+ <!-- Main Stylesheet --> 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/hero_section.css">
-  <link rel="stylesheet" href="css/about_me_profile_card.css">
-  <link rel="stylesheet" href="css/myfeaturedworkgallary.css">
-  <link rel="stylesheet" href="css/what_i_do.css">
-  <link rel="stylesheet" href="css/technical_expertise.css">
-  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/whatsappscrollbutton.css">
-  <link rel="stylesheet" href="css/polices.css">
-  <link rel="stylesheet" href="css/pricing.css">
-   <link rel="stylesheet" href="css/copyright footer.css">
-   <link rel="stylesheet" href="css/my_working_process.css">
-
+    <link rel="stylesheet" href="css/my_working_process.css">
 
 
 
@@ -55,6 +47,7 @@
 
 <body>
 
+  
   <!-- ===== NAVBAR Start ===== -->
 
   <nav>
@@ -72,7 +65,7 @@
     <ul id="menu">
       <li><a href="index.html#home">Home</a></li>
       
-           <li class="dropdown">
+      <li class="dropdown">
         <a href="#" class="dropdown-toggle">About <i class="fas fa-chevron-down"></i></a>
         <ul class="dropdown-menu">
           <li><a href="index.html#about">About Me</a></li>
@@ -97,7 +90,7 @@
         </ul>
       </li>
       
-        <li class="dropdown">
+      <li class="dropdown">
     <a href="#" class="dropdown-toggle" style="color:#FF6600 !important;">
         POLICIES <i class="fas fa-chevron-down"></i>
     </a>
@@ -121,9 +114,7 @@
     </ul>
   </nav>
 
-  
   <!-- ===== NAVBAR End ===== -->
-
 
   <!-- My Working Process Start -->
 <section id="work-process" class="section-padding pb-70 process-area">
@@ -568,70 +559,12 @@
     setInterval(nextSlide, 4000); // 4 seconds per slide
   </script>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
   <script src="js/navbarsilder.js"></script>
-  <script src="js/myfeaturedworkgallary.js"></script>
   <script src="js/whatsappscrollbutton.js"></script>
+    <script src="js/whychooseme.js"></script>
 
 
-
-  <script>
-    // 1. Hamburger Menu Toggle Function
-    function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("active");
-    }
-
-    // 2. Mobile Click Dropdown Logic
-    document.addEventListener("DOMContentLoaded", function () {
-      const dropdownToggle = document.querySelector(".dropdown-toggle");
-      const dropdownParent = document.querySelector(".dropdown");
-
-      if (dropdownToggle) {
-        dropdownToggle.addEventListener("click", function (e) {
-          // Agar screen mobile view (<= 768px) mein hai tabhi click handle karein
-          if (window.innerWidth <= 768) {
-            e.preventDefault(); // Page link scroll/jump hone se rokega
-            dropdownParent.classList.toggle("open"); // CSS open display block karegi
-          }
-        });
-      }
-    });
-
-    // 3. Normal scroll animation scripts (Old Code)
-    const elements = document.querySelectorAll(".animate");
-    const skills = document.querySelectorAll(".skill");
-
-    function handleScroll() {
-      const trigger = window.innerHeight * 0.8;
-
-      elements.forEach(el => {
-        const top = el.getBoundingClientRect().top;
-        if (top < trigger) {
-          el.classList.add("show");
-        } else {
-          el.classList.remove("show");
-        }
-      });
-
-      skills.forEach(skill => {
-        const top = skill.getBoundingClientRect().top;
-        const bar = skill.querySelector(".skill-bar span");
-
-        if (top < trigger) {
-          if (bar) {
-            bar.style.width = bar.getAttribute("data-width");
-          }
-        } else {
-          if (bar) {
-            bar.style.width = "0";
-          }
-        }
-      });
-    }
-
-    window.addEventListener("scroll", handleScroll);
-  </script>
 
 </body>
 
