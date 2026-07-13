@@ -33,74 +33,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 });
 
-/* ==========================================================================
-   📱 ONLY MOBILE: PERMANENT DROPDOWN TOGGLE AND AUTO-CLOSE BLOCKER
-   ========================================================================== */
-document.addEventListener("DOMContentLoaded", function () {
-    // Window level event listener lagaya hai jo kisi bhi dusri script (navbarsilder.js) ke click event ko override kar dega
-    window.addEventListener("click", function (e) {
-        // Check karenge ki click kya 'Services' link par ya uske arrow par hua hai
-        const dropdownLink = e.target.closest("nav ul li.dropdown > a");
-        
-        if (dropdownLink && window.innerWidth <= 768) {
-            e.preventDefault();   // Page ko upar jump hone se rokega
-            e.stopPropagation();  // 🔥 navbarsilder.js jo menu band kar raha tha use block karega!
-            
-            const parentLi = dropdownLink.parentElement;
-            parentLi.classList.toggle("open"); // Mobile view dropdown class open karega
-            
-            console.log("Mobile dropdown opened permanently!");
-        }
-    }, true); // 'true' ka matlab yeh event sabse pehle chalega aur dusri files ke rules ko block kar dega
-});
 
-
-
-
-// 1. Hamburger Menu Toggle Function
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  menu.classList.toggle("active");
-}
-
-// 2. Mobile Click Dropdown & Auto-Close Logic
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-  const menu = document.getElementById("menu");
-
-  // Dropdown open/close karne ke liye
-  dropdownToggles.forEach(toggle => {
-    toggle.addEventListener("click", function (e) {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        e.stopPropagation(); // Click event ko upar tak jaane se rokega
-        const parent = this.closest(".dropdown");
-        
-        // Baki sabhi dropdowns ko band karein sirf isko chhod kar
-        document.querySelectorAll(".dropdown").forEach(d => {
-          if (d !== parent) d.classList.remove("open");
-        });
-
-        parent.classList.toggle("open");
-      }
-    });
-  });
-
-  // Jab dropdown ke andar ke kisi LINK par click ho, toh menu auto-close ho jaye
-  const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
-  dropdownLinks.forEach(link => {
-    link.addEventListener("click", function () {
-      if (window.innerWidth <= 768) {
-        // Main menu ko band karein
-        menu.classList.remove("active");
-        // Saare khule hue dropdowns ko band karein
-        document.querySelectorAll(".dropdown").forEach(d => {
-          d.classList.remove("open");
-        });
-      }
-    });
-  });
-});
 
 // 3. Normal scroll animation scripts (Old Code)
 const elements = document.querySelectorAll(".animate");
@@ -134,28 +67,6 @@ function handleScroll() {
 }
 
 window.addEventListener("scroll", handleScroll);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -253,3 +164,4 @@ function switchPricing() {
         linkPremium.href = "https://wa.me/919714004207?text=Hi%20Deepak,%20I%20want%20to%20inquire%20about%20the%20Social%20Media%20Premium%20Monthly%20Plan.";
     }
 }
+

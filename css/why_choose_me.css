@@ -1,43 +1,5 @@
 
 
-
-/* --- Why Choose Me Section --- */
-#why-choose {
-    font-family: Arial, sans-serif; /* Exact same font as What I Do */
-    background-color: #ffffff;
-    padding: 60px 0;
-}
-
-/* --- Section Title Match Fix --- */
-.section-title h2 {
-    font-size: 32px;
-    font-weight: 700;
-    text-transform: none; /* Agar uppercase hatana ho toh */
-    margin-bottom: 15px;
-    color: #000000;
-    text-align: center;
-}
-
-/* Orange Line */
-#why-choose .section-title h2::after{
-    content:"";
-    display:block;
-    width:80px;
-    height:4px;
-    background:#ff6600;
-    margin:20px auto;
-}
-
-.section-title p {
-    color: #333333;
-    font-size: 15px;
-    font-weight: 600; /* Creative solutions... wale text jaisa semi-bold */
-    line-height: 1.6;
-    margin-top: 15px;
-    margin-bottom: 50px;
-    text-align: center;
-}
-
 /* --- Flexible Feature Card Layout --- */
 .single-why-me {
     display: flex;

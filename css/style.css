@@ -32,8 +32,6 @@
     }
 
 
-
-
 /* Navigation */
     nav {
       background: #ffffff;
@@ -205,6 +203,13 @@
         display: block; /* Hamburger visible on mobile */
       }
 
+
+
+
+
+
+
+      
       nav ul {
         display: none; /* Hide Menu by default on Mobile */
         flex-direction: column;
@@ -266,14 +271,6 @@
       }
     }
 
-
-
-    
-
-
-
-
-    
 
 
 

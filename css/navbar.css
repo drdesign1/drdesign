@@ -1,34 +1,35 @@
+/* ==========================================================================
+   NAVBAR + LOGO + MENU
+   ========================================================================== */
 
-/* navbaar + logo + manu navigation  */
-
-/* navbaar  */
 nav {
     position: fixed;
-    width: 100%;
     top: 0;
-    background: var(--light);
+    width: 100%;
     padding: 15px 8%;
+    background: var(--light);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
     gap: 15px;
-
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    z-index: 1000;
 }
 
+nav.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease;
+}
 
-/* logo  */
+/* Logo */
 
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     text-decoration: none;
     color: inherit;
-    /* text ka color same rahe */
 }
 
 .logo-img {
@@ -36,289 +37,172 @@ nav {
     width: auto;
 }
 
+/* Navigation */
 
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
 
 nav ul li a {
     text-decoration: none;
     color: var(--dark);
     font-weight: 600;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 nav ul li a:hover {
     color: var(--primary);
 }
 
+/* Hamburger */
 
-nav.hide {
-    opacity: 0;
-    pointer-events: none;
-    transition: 0.3s ease;
-}
-
-
-/* NAVBAR BASE */
-/* Update Date 21-03-2026 */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: #ff6600;
-    /* 🔥 orange navbar */
-}
-
-/* LOGO */
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* MENU */
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-    /* 🔥 important */
-    margin: 0;
-    padding: 0;
-}
-
-
-
-/* HAMBURGER BUTTON */
 .menu-toggle {
     display: none;
     font-size: 28px;
     cursor: pointer;
     margin-left: auto;
-    /* 🔥 push to right */
+    color: #ff6600;
 }
-
-
-
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-
-    nav ul {
-        position: absolute;
-        top: 100%;
-        /* 🔥 nav ke neeche */
-        left: 0;
-        width: 100%;
-        background: #ff6600;
-
-        flex-direction: column;
-        align-items: flex-start;
-
-        max-height: 0;
-        /* 🔥 hidden */
-        overflow: hidden;
-        transition: 0.3s ease;
-
-        padding: 0 20px;
-        /* 🔥 top padding hata diya */
-    }
-
-    nav ul.active {
-        max-height: none;
-        /* 🔥 open height */
-        overflow: visible !important;
-        max-width: 400px;
-        padding: 20px 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 90%;
-        /* ya 300px bhi kar sakta hai */
-    }
-
-    nav ul li {
-        width: 100%;
-        padding: 4px 0;
-        /* 🔥 yaha se spacing control hota hai */
-        margin: 0;
-        padding: 0 !important;
-        /* 🔥 main gap control */
-        line-height: 1 !important;
-        /* 🔥 extra height hatao */
-
-    }
-
-    nav ul li a {
-        color: white !important;
-        /* 🔥 ye add karo */
-        font-size: 16px;
-        display: block;
-        padding: 0 !important;
-        /* 🔥 main fix */
-    }
-
-    nav ul li a:hover {
-        color: white;
-    }
-
-    .menu-toggle {
-        display: flex;
-        /* 🔥 block → flex */
-        align-items: center;
-        /* 🔥 vertical center */
-        justify-content: center;
-        color: #ff6600;
-        line-height: 1;
-        height: auto;
-    }
-}
-
-/* navbaar + logo + manu navigation End  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
-   📱 ONLY MOBILE VIEW FIXED NAVIGATION & RIGHT-SIDE DROPDOWN
+   MOBILE
    ========================================================================== */
-@media (max-width: 768px) {
-    
-    /* 1. Mobile menu drawer panel container background */
-    nav ul.active {
-        background: #ffffff !important; 
-        max-height: none !important; 
-        overflow: visible !important; /* Submenu elements popout visibility layout */
-        padding: 20px 20px !important;
-        border-radius: 8px !important;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
-        display: block !important;    
-        text-align: left !important;  
+
+@media (max-width:768px){
+
+    nav ul{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        align-items:flex-start;
+        max-height:0;
+        overflow:hidden;
+        transition:.3s ease;
+        padding:0 20px;
     }
 
-    /* 2. Menu elements horizontal stack lines alignment */
-    nav ul li {
-        width: 100% !important;
-        padding: 10px 0 !important;
-        display: block !important;    
-        text-align: left !important;
+    nav ul.active{
+        display:block !important;
+        max-height:none !important;
+        overflow:visible !important;
+        width:90%;
+        max-width:400px;
+        left:50%;
+        transform:translateX(-50%);
+        padding:20px;
+        background:#fff;
+        border-radius:8px;
+        box-shadow:0 10px 25px rgba(0,0,0,.15);
+        text-align:left;
     }
 
-    nav ul li a {
-        color: #000000 !important;   /* Shuruat me saare links normal pure black */
-        font-size: 16px !important;
-        display: inline-block !important;
-        font-weight: 600 !important;
-        transition: all 0.3s ease;
-        text-align: left !important;
+    nav ul li{
+        width:100%;
+        display:block;
+        padding:10px 0 !important;
+        margin:0;
+        text-align:left;
     }
 
-    /* Hover or active click finger touches text change state */
-    nav ul li a:hover {
-        color: #FF6600 !important; /* Cursor ya touch par orange */
+    nav ul li a{
+        display:inline-block;
+        color:#000 !important;
+        font-size:16px;
+        font-weight:600;
+        transition:.3s;
     }
 
-    /* POLICIES link custom styling alignment wrapper */
-    nav ul li a[style*="color"] {
-        color: #FF6600 !important;
+    nav ul li a:hover{
+        color:#ff6600 !important;
     }
 
-    /* 3. SERVICES DROPDOWN WRAPPER DEFINITIONS */
-    nav ul li.dropdown {
-        position: relative !important;
+    nav ul li a[style*="color"]{
+        color:#ff6600 !important;
     }
 
-    .dropdown:hover .dropdown-menu {
-        display: none !important; /* Desktop hover panel layout completely clear in mobile */
+    .menu-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        line-height:1;
     }
 
-   /* 🔥 4. DROPDOWN SUBMENU RIGHT SIDE OPEN LOGIC */
-   nav ul li .dropdown-menu{
-    position:absolute !important;
-    right:0 !important;
-    left:auto !important;
-    top:0 !important;
-    width:180px !important;
-    z-index:9999 !important;
-    }
-    
-    /* 🔥 Jab class .open trigger hogi JavaScript se tab hi right side panel dikhega */
-    nav ul li.dropdown.open .dropdown-menu {
-        display: block !important;       
+    /* Dropdown */
+
+    nav ul li.dropdown{
+        position:relative;
     }
 
-    nav ul li .dropdown-menu li {
-        width: 100% !important;
-        padding: 5px 0 !important;
-        text-align: left !important;
+    .dropdown:hover .dropdown-menu{
+        display:none !important;
     }
 
-    nav ul li .dropdown-menu li a {
-        font-size: 15px !important;
-        color: #000000 !important; 
-        font-weight: 500 !important;
-        display: block !important;
-    }
-    
-    nav ul li .dropdown-menu li a:hover {
-        color: #FF6600 !important; 
+    nav ul li .dropdown-menu{
+        position:absolute !important;
+        top:0;
+        right:0;
+        left:auto;
+        width:180px;
+        z-index:9999;
     }
 
-    /* FontAwesome Dynamic Indicators Arrow configurations */
-    nav ul li.dropdown.open > a i {
-        transform: rotate(-90deg) !important; /* Open hone par arrow right side swing point karega */
+    nav ul li.dropdown.open .dropdown-menu{
+        display:block !important;
     }
 
-    nav ul li.dropdown > a i {
-        display: inline-block;
-        transition: transform 0.3s ease;
-        margin-left: 8px;
-        color: #000000 !important; 
+    nav ul li .dropdown-menu li{
+        width:100%;
+        padding:5px 0 !important;
     }
 
-
-
-    /* 🔥 5. HIRE ME BUTTON - CONTACT KE NICHE, ONLY GREEN FONT TEXT LINK (NO BOX/CAPSULE) */
-    nav ul li a.hire-btn {
-        color: #25D366 !important;       /* WhatsApp original theme clean green font */
-        background: transparent !important; /* No background borders or strips */
-        font-weight: 700 !important;     
-        font-size: 16px !important;
-        display: inline-block !important;
-        padding: 0 !important;           
-        margin-top: 5px !important;
-        text-align: left !important;
-        box-shadow: none !important;     
-        transition: color 0.3s ease;
+    nav ul li .dropdown-menu li a{
+        display:block;
+        color:#000 !important;
+        font-size:15px;
+        font-weight:500;
     }
-    
-    nav ul li a.hire-btn:hover {
-        color: #075E54 !important;       /* Hover layout deep emerald WhatsApp tone transition */
+
+    nav ul li .dropdown-menu li a:hover{
+        color:#ff6600 !important;
+    }
+
+    nav ul li.dropdown > a i{
+        display:inline-block;
+        margin-left:8px;
+        color:#000 !important;
+        transition:transform .3s ease;
+    }
+
+    nav ul li.dropdown.open > a i{
+        transform:rotate(-90deg);
+    }
+
+    /* Hire Button */
+
+    nav ul li a.hire-btn{
+        background:transparent !important;
+        color:#25D366 !important;
+        font-size:16px;
+        font-weight:700;
+        padding:0 !important;
+        margin-top:5px;
+        box-shadow:none;
+    }
+
+    nav ul li a.hire-btn:hover{
+        color:#075E54 !important;
     }
 }
 
-/* Base structural desktop synchronization validation rules */
-nav ul li .dropdown-menu li {
-    width: 100% !important;
-}
+/* Desktop Dropdown */
 
+nav ul li .dropdown-menu li{
+    width:100%;
+}

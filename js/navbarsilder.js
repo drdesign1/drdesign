@@ -85,3 +85,129 @@ document.querySelectorAll("#menu a").forEach(link => {
         document.body.classList.remove("menu-open");
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 1. Hamburger Menu Toggle Function
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("active");
+}
+
+// 2. Mobile Click Dropdown & Auto-Close Logic
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  const menu = document.getElementById("menu");
+
+  // Dropdown open/close karne ke liye
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener("click", function (e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        e.stopPropagation(); // Click event ko upar tak jaane se rokega
+        const parent = this.closest(".dropdown");
+        
+        // Baki sabhi dropdowns ko band karein sirf isko chhod kar
+        document.querySelectorAll(".dropdown").forEach(d => {
+          if (d !== parent) d.classList.remove("open");
+        });
+
+        parent.classList.toggle("open");
+      }
+    });
+  });
+
+  // Jab dropdown ke andar ke kisi LINK par click ho, toh menu auto-close ho jaye
+  const dropdownLinks = document.querySelectorAll(".dropdown-menu a");
+  dropdownLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      if (window.innerWidth <= 768) {
+        // Main menu ko band karein
+        menu.classList.remove("active");
+        // Saare khule hue dropdowns ko band karein
+        document.querySelectorAll(".dropdown").forEach(d => {
+          d.classList.remove("open");
+        });
+      }
+    });
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      const dropdownParent = document.querySelector(".dropdown");
+
+      if (dropdownToggle) {
+        dropdownToggle.addEventListener("click", function (e) {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdownParent.classList.toggle("open");
+          }
+        });
+      }
+    });
+
+
+
+
+
+
+
+
+
+
+    
+    // Hamburger Menu
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.classList.toggle("active");
+    }
+
+    // Mobile Click Dropdown Logic
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownToggle = document.querySelector(".dropdown-toggle");
+      const dropdownParent = document.querySelector(".dropdown");
+
+      if (dropdownToggle) {
+        dropdownToggle.addEventListener("click", function (e) {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            dropdownParent.classList.toggle("open");
+          }
+        });
+      }
+    });
